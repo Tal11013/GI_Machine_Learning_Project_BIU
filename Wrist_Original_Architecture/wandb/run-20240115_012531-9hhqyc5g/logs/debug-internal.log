@@ -1,0 +1,168 @@
+2024-01-15 01:25:31,527 INFO    StreamThr :60628 [internal.py:wandb_internal():86] W&B internal server running at pid: 60628, started at: 2024-01-15 01:25:31.526782
+2024-01-15 01:25:31,529 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: status
+2024-01-15 01:25:31,539 INFO    WriterThread:60628 [datastore.py:open_for_write():85] open: C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_012531-9hhqyc5g\run-9hhqyc5g.wandb
+2024-01-15 01:25:31,540 DEBUG   SenderThread:60628 [sender.py:send():380] send: header
+2024-01-15 01:25:31,540 DEBUG   SenderThread:60628 [sender.py:send():380] send: run
+2024-01-15 01:25:31,944 INFO    SenderThread:60628 [dir_watcher.py:__init__():211] watching files in: C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_012531-9hhqyc5g\files
+2024-01-15 01:25:31,944 INFO    SenderThread:60628 [sender.py:_start_run_threads():1124] run started: 9hhqyc5g with start time 1705274731.526781
+2024-01-15 01:25:31,955 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: check_version
+2024-01-15 01:25:31,955 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: check_version
+2024-01-15 01:25:32,247 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: run_start
+2024-01-15 01:25:32,260 DEBUG   HandlerThread:60628 [system_info.py:__init__():32] System info init
+2024-01-15 01:25:32,260 DEBUG   HandlerThread:60628 [system_info.py:__init__():47] System info init done
+2024-01-15 01:25:32,260 INFO    HandlerThread:60628 [system_monitor.py:start():194] Starting system monitor
+2024-01-15 01:25:32,261 INFO    SystemMonitor:60628 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-15 01:25:32,261 INFO    HandlerThread:60628 [system_monitor.py:probe():214] Collecting system info
+2024-01-15 01:25:32,278 DEBUG   HandlerThread:60628 [system_info.py:probe():196] Probing system
+2024-01-15 01:25:32,279 INFO    SystemMonitor:60628 [interfaces.py:start():190] Started cpu monitoring
+2024-01-15 01:25:32,279 DEBUG   HandlerThread:60628 [system_info.py:probe():244] Probing system done
+2024-01-15 01:25:32,279 DEBUG   HandlerThread:60628 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22621-SP0', 'python': '3.9.13', 'heartbeatAt': '2024-01-14T23:25:32.278038', 'startedAt': '2024-01-14T23:25:31.514423', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'C:\\GI_Machine_Learning_Project-master\\Wrist_Original_Architecture\\sweep_conf.py', 'codePathLocal': 'sweep_conf.py', 'codePath': 'sweep_conf.py', 'host': 'TalComputer', 'username': 'iker1', 'executable': 'C:\\GI_Machine_Learning_Project-master\\venv\\Scripts\\python.exe', 'cpu_count': 10, 'cpu_count_logical': 12, 'cpu_freq': {'current': 1700.0, 'min': 0.0, 'max': 1700.0}, 'cpu_freq_per_core': [{'current': 1700.0, 'min': 0.0, 'max': 1700.0}], 'disk': {'/': {'total': 951.6455039978027, 'used': 209.2829360961914}}, 'memory': {'total': 15.730949401855469}}
+2024-01-15 01:25:32,279 INFO    HandlerThread:60628 [system_monitor.py:probe():224] Finished collecting system info
+2024-01-15 01:25:32,279 INFO    HandlerThread:60628 [system_monitor.py:probe():227] Publishing system info
+2024-01-15 01:25:32,279 DEBUG   HandlerThread:60628 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-01-15 01:25:32,280 INFO    SystemMonitor:60628 [interfaces.py:start():190] Started disk monitoring
+2024-01-15 01:25:32,293 INFO    SystemMonitor:60628 [interfaces.py:start():190] Started memory monitoring
+2024-01-15 01:25:32,308 DEBUG   HandlerThread:60628 [system_info.py:_save_pip():68] Saving pip packages done
+2024-01-15 01:25:32,308 INFO    SystemMonitor:60628 [interfaces.py:start():190] Started network monitoring
+2024-01-15 01:25:32,309 INFO    HandlerThread:60628 [system_monitor.py:probe():229] Finished publishing system info
+2024-01-15 01:25:32,313 DEBUG   SenderThread:60628 [sender.py:send():380] send: files
+2024-01-15 01:25:32,313 INFO    SenderThread:60628 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2024-01-15 01:25:32,321 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-15 01:25:32,322 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: stop_status
+2024-01-15 01:25:32,323 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-15 01:25:32,586 DEBUG   SenderThread:60628 [sender.py:send():380] send: telemetry
+2024-01-15 01:25:32,594 DEBUG   SenderThread:60628 [sender.py:send():380] send: telemetry
+2024-01-15 01:25:32,594 DEBUG   SenderThread:60628 [sender.py:send():380] send: exit
+2024-01-15 01:25:32,594 INFO    SenderThread:60628 [sender.py:send_exit():585] handling exit code: 1
+2024-01-15 01:25:32,594 INFO    SenderThread:60628 [sender.py:send_exit():587] handling runtime: 0
+2024-01-15 01:25:32,595 INFO    SenderThread:60628 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2024-01-15 01:25:32,595 INFO    SenderThread:60628 [sender.py:send_exit():593] send defer
+2024-01-15 01:25:32,595 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: defer
+2024-01-15 01:25:32,595 INFO    HandlerThread:60628 [handler.py:handle_request_defer():172] handle defer: 0
+2024-01-15 01:25:32,596 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: defer
+2024-01-15 01:25:32,596 INFO    SenderThread:60628 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-01-15 01:25:32,596 INFO    SenderThread:60628 [sender.py:transition_state():613] send defer: 1
+2024-01-15 01:25:32,596 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: defer
+2024-01-15 01:25:32,596 INFO    HandlerThread:60628 [handler.py:handle_request_defer():172] handle defer: 1
+2024-01-15 01:25:32,596 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: defer
+2024-01-15 01:25:32,596 INFO    SenderThread:60628 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-01-15 01:25:32,596 INFO    SenderThread:60628 [sender.py:transition_state():613] send defer: 2
+2024-01-15 01:25:32,596 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: defer
+2024-01-15 01:25:32,596 INFO    HandlerThread:60628 [handler.py:handle_request_defer():172] handle defer: 2
+2024-01-15 01:25:32,596 INFO    HandlerThread:60628 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-15 01:25:32,597 DEBUG   SystemMonitor:60628 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-15 01:25:32,597 INFO    HandlerThread:60628 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-15 01:25:32,597 DEBUG   SystemMonitor:60628 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-15 01:25:32,597 INFO    HandlerThread:60628 [interfaces.py:finish():202] Joined disk monitor
+2024-01-15 01:25:32,597 DEBUG   SystemMonitor:60628 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-15 01:25:32,597 INFO    HandlerThread:60628 [interfaces.py:finish():202] Joined memory monitor
+2024-01-15 01:25:32,598 INFO    HandlerThread:60628 [interfaces.py:finish():202] Joined network monitor
+2024-01-15 01:25:32,598 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: defer
+2024-01-15 01:25:32,598 INFO    SenderThread:60628 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-01-15 01:25:32,598 INFO    SenderThread:60628 [sender.py:transition_state():613] send defer: 3
+2024-01-15 01:25:32,598 DEBUG   SenderThread:60628 [sender.py:send():380] send: stats
+2024-01-15 01:25:32,598 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: defer
+2024-01-15 01:25:32,599 INFO    HandlerThread:60628 [handler.py:handle_request_defer():172] handle defer: 3
+2024-01-15 01:25:32,599 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: defer
+2024-01-15 01:25:32,599 INFO    SenderThread:60628 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-01-15 01:25:32,599 INFO    SenderThread:60628 [sender.py:transition_state():613] send defer: 4
+2024-01-15 01:25:32,599 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: defer
+2024-01-15 01:25:32,599 INFO    HandlerThread:60628 [handler.py:handle_request_defer():172] handle defer: 4
+2024-01-15 01:25:32,599 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: defer
+2024-01-15 01:25:32,599 INFO    SenderThread:60628 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-01-15 01:25:32,599 INFO    SenderThread:60628 [sender.py:transition_state():613] send defer: 5
+2024-01-15 01:25:32,599 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: defer
+2024-01-15 01:25:32,599 INFO    HandlerThread:60628 [handler.py:handle_request_defer():172] handle defer: 5
+2024-01-15 01:25:32,599 DEBUG   SenderThread:60628 [sender.py:send():380] send: summary
+2024-01-15 01:25:32,600 INFO    SenderThread:60628 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2024-01-15 01:25:32,601 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: defer
+2024-01-15 01:25:32,601 INFO    SenderThread:60628 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-01-15 01:25:32,601 INFO    SenderThread:60628 [sender.py:transition_state():613] send defer: 6
+2024-01-15 01:25:32,601 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: defer
+2024-01-15 01:25:32,601 INFO    HandlerThread:60628 [handler.py:handle_request_defer():172] handle defer: 6
+2024-01-15 01:25:32,601 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: defer
+2024-01-15 01:25:32,601 INFO    SenderThread:60628 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-01-15 01:25:32,603 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 01:25:32,822 INFO    SenderThread:60628 [sender.py:transition_state():613] send defer: 7
+2024-01-15 01:25:32,822 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: defer
+2024-01-15 01:25:32,822 INFO    HandlerThread:60628 [handler.py:handle_request_defer():172] handle defer: 7
+2024-01-15 01:25:32,822 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: defer
+2024-01-15 01:25:32,822 INFO    SenderThread:60628 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-01-15 01:25:32,952 INFO    Thread-12 :60628 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_012531-9hhqyc5g\files\config.yaml
+2024-01-15 01:25:32,953 INFO    Thread-12 :60628 [dir_watcher.py:_on_file_created():271] file/dir created: C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_012531-9hhqyc5g\files\wandb-summary.json
+2024-01-15 01:25:32,953 INFO    Thread-12 :60628 [dir_watcher.py:_on_file_created():271] file/dir created: C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_012531-9hhqyc5g\files\wandb-metadata.json
+2024-01-15 01:25:32,953 INFO    Thread-12 :60628 [dir_watcher.py:_on_file_created():271] file/dir created: C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_012531-9hhqyc5g\files\output.log
+2024-01-15 01:25:32,953 INFO    Thread-12 :60628 [dir_watcher.py:_on_file_created():271] file/dir created: C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_012531-9hhqyc5g\files\requirements.txt
+2024-01-15 01:25:33,279 INFO    wandb-upload_0:60628 [upload_job.py:push():131] Uploaded file C:\Users\iker1\AppData\Local\Temp\tmp_w82nbzcwandb\w6i9x8tn-wandb-metadata.json
+2024-01-15 01:25:33,340 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-15 01:25:34,605 INFO    SenderThread:60628 [sender.py:transition_state():613] send defer: 8
+2024-01-15 01:25:34,605 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: poll_exit
+2024-01-15 01:25:34,606 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: defer
+2024-01-15 01:25:34,607 INFO    HandlerThread:60628 [handler.py:handle_request_defer():172] handle defer: 8
+2024-01-15 01:25:34,607 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: defer
+2024-01-15 01:25:34,607 INFO    SenderThread:60628 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-01-15 01:25:34,608 INFO    SenderThread:60628 [sender.py:transition_state():613] send defer: 9
+2024-01-15 01:25:34,608 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: defer
+2024-01-15 01:25:34,608 INFO    HandlerThread:60628 [handler.py:handle_request_defer():172] handle defer: 9
+2024-01-15 01:25:34,608 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: defer
+2024-01-15 01:25:34,608 INFO    SenderThread:60628 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-01-15 01:25:34,608 INFO    SenderThread:60628 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-01-15 01:25:34,979 INFO    SenderThread:60628 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_012531-9hhqyc5g\files\output.log
+2024-01-15 01:25:34,979 INFO    SenderThread:60628 [dir_watcher.py:finish():388] scan: C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_012531-9hhqyc5g\files
+2024-01-15 01:25:34,979 INFO    SenderThread:60628 [dir_watcher.py:finish():402] scan save: C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_012531-9hhqyc5g\files\config.yaml config.yaml
+2024-01-15 01:25:34,979 INFO    SenderThread:60628 [dir_watcher.py:finish():402] scan save: C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_012531-9hhqyc5g\files\output.log output.log
+2024-01-15 01:25:34,981 INFO    SenderThread:60628 [dir_watcher.py:finish():402] scan save: C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_012531-9hhqyc5g\files\requirements.txt requirements.txt
+2024-01-15 01:25:34,983 INFO    SenderThread:60628 [dir_watcher.py:finish():402] scan save: C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_012531-9hhqyc5g\files\wandb-metadata.json wandb-metadata.json
+2024-01-15 01:25:34,984 INFO    SenderThread:60628 [dir_watcher.py:finish():402] scan save: C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_012531-9hhqyc5g\files\wandb-summary.json wandb-summary.json
+2024-01-15 01:25:34,986 INFO    SenderThread:60628 [sender.py:transition_state():613] send defer: 10
+2024-01-15 01:25:34,987 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: defer
+2024-01-15 01:25:34,988 INFO    HandlerThread:60628 [handler.py:handle_request_defer():172] handle defer: 10
+2024-01-15 01:25:34,989 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: defer
+2024-01-15 01:25:34,989 INFO    SenderThread:60628 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-01-15 01:25:34,989 INFO    SenderThread:60628 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-15 01:25:35,367 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-15 01:25:35,367 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: poll_exit
+2024-01-15 01:25:35,414 INFO    wandb-upload_0:60628 [upload_job.py:push():131] Uploaded file C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_012531-9hhqyc5g\files\config.yaml
+2024-01-15 01:25:35,517 INFO    wandb-upload_2:60628 [upload_job.py:push():131] Uploaded file C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_012531-9hhqyc5g\files\requirements.txt
+2024-01-15 01:25:35,589 INFO    wandb-upload_3:60628 [upload_job.py:push():131] Uploaded file C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_012531-9hhqyc5g\files\wandb-summary.json
+2024-01-15 01:25:35,589 INFO    wandb-upload_1:60628 [upload_job.py:push():131] Uploaded file C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_012531-9hhqyc5g\files\output.log
+2024-01-15 01:25:35,802 INFO    Thread-11 :60628 [sender.py:transition_state():613] send defer: 11
+2024-01-15 01:25:35,802 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: defer
+2024-01-15 01:25:35,802 INFO    HandlerThread:60628 [handler.py:handle_request_defer():172] handle defer: 11
+2024-01-15 01:25:35,804 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: defer
+2024-01-15 01:25:35,804 INFO    SenderThread:60628 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-01-15 01:25:35,804 INFO    SenderThread:60628 [file_pusher.py:join():181] waiting for file pusher
+2024-01-15 01:25:35,804 INFO    SenderThread:60628 [sender.py:transition_state():613] send defer: 12
+2024-01-15 01:25:35,804 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: defer
+2024-01-15 01:25:35,804 INFO    HandlerThread:60628 [handler.py:handle_request_defer():172] handle defer: 12
+2024-01-15 01:25:35,804 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: defer
+2024-01-15 01:25:35,804 INFO    SenderThread:60628 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-01-15 01:25:35,804 INFO    SenderThread:60628 [file_stream.py:finish():595] file stream finish called
+2024-01-15 01:25:35,979 INFO    SenderThread:60628 [file_stream.py:finish():599] file stream finish is done
+2024-01-15 01:25:35,979 INFO    SenderThread:60628 [sender.py:transition_state():613] send defer: 13
+2024-01-15 01:25:35,979 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: defer
+2024-01-15 01:25:35,979 INFO    HandlerThread:60628 [handler.py:handle_request_defer():172] handle defer: 13
+2024-01-15 01:25:35,979 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: defer
+2024-01-15 01:25:35,980 INFO    SenderThread:60628 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-01-15 01:25:35,980 INFO    SenderThread:60628 [sender.py:transition_state():613] send defer: 14
+2024-01-15 01:25:35,980 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: defer
+2024-01-15 01:25:35,980 DEBUG   SenderThread:60628 [sender.py:send():380] send: final
+2024-01-15 01:25:35,980 INFO    HandlerThread:60628 [handler.py:handle_request_defer():172] handle defer: 14
+2024-01-15 01:25:35,980 DEBUG   SenderThread:60628 [sender.py:send():380] send: footer
+2024-01-15 01:25:35,980 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: defer
+2024-01-15 01:25:35,980 INFO    SenderThread:60628 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-01-15 01:25:35,982 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-15 01:25:35,982 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: poll_exit
+2024-01-15 01:25:35,982 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-15 01:25:35,982 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: server_info
+2024-01-15 01:25:35,982 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: get_summary
+2024-01-15 01:25:35,983 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: sampled_history
+2024-01-15 01:25:35,983 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: server_info
+2024-01-15 01:25:35,983 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: job_info
+2024-01-15 01:25:36,150 DEBUG   SenderThread:60628 [sender.py:send_request():407] send_request: job_info
+2024-01-15 01:25:36,151 DEBUG   HandlerThread:60628 [handler.py:handle_request():146] handle_request: shutdown
+2024-01-15 01:25:36,152 INFO    HandlerThread:60628 [handler.py:finish():866] shutting down handler
+2024-01-15 01:25:36,987 INFO    WriterThread:60628 [datastore.py:close():294] close: C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_012531-9hhqyc5g\run-9hhqyc5g.wandb
+2024-01-15 01:25:37,158 INFO    SenderThread:60628 [sender.py:finish():1536] shutting down sender
+2024-01-15 01:25:37,158 INFO    SenderThread:60628 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-15 01:25:37,158 INFO    SenderThread:60628 [file_pusher.py:join():181] waiting for file pusher

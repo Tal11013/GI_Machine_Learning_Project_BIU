@@ -1,0 +1,48 @@
+wandb_version: 1
+
+epochs:
+  desc: null
+  value: 5
+lr:
+  desc: null
+  value: 1.0e-05
+model_name:
+  desc: null
+  value: ResNet
+num_of_layers_unfreeze:
+  desc: null
+  value: 2
+num_of_measurements:
+  desc: null
+  value: 512
+reshape_size:
+  desc: null
+  value: '256_512'
+_wandb:
+  desc: null
+  value:
+    python_version: 3.9.13
+    cli_version: 0.16.0
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1705275919.845653
+    t:
+      1:
+      - 1
+      - 41
+      - 55
+      2:
+      - 1
+      - 41
+      - 55
+      3:
+      - 2
+      - 23
+      - 37
+      4: 3.9.13
+      5: 0.16.0
+      8:
+      - 3
+      - 5
+      13: windows-amd64

@@ -1,0 +1,35 @@
+2024-01-15 01:49:16,456 INFO    Thread-11 :44888 [wandb_setup.py:_flush():76] Current SDK version is 0.16.0
+2024-01-15 01:49:16,457 INFO    Thread-11 :44888 [wandb_setup.py:_flush():76] Configure stats pid to 44888
+2024-01-15 01:49:16,457 INFO    Thread-11 :44888 [wandb_setup.py:_flush():76] Loading settings from C:\Users\iker1\.config\wandb\settings
+2024-01-15 01:49:16,457 INFO    Thread-11 :44888 [wandb_setup.py:_flush():76] Loading settings from C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\settings
+2024-01-15 01:49:16,457 INFO    Thread-11 :44888 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'GI_Machine_Learning_Project', 'entity': 'barilan', 'root_dir': 'C:\\GI_Machine_Learning_Project-master\\Wrist_Original_Architecture', 'run_id': '45bjev44', 'sweep_param_path': 'C:\\GI_Machine_Learning_Project-master\\Wrist_Original_Architecture\\wandb\\sweep-w4vdczk6\\config-45bjev44.yaml', 'sweep_id': 'w4vdczk6'}
+2024-01-15 01:49:16,457 INFO    Thread-11 :44888 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-01-15 01:49:16,457 INFO    Thread-11 :44888 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'sweep_conf.py', 'program_abspath': 'C:\\GI_Machine_Learning_Project-master\\Wrist_Original_Architecture\\sweep_conf.py', 'program': 'C:\\GI_Machine_Learning_Project-master\\Wrist_Original_Architecture\\sweep_conf.py'}
+2024-01-15 01:49:16,457 INFO    Thread-11 :44888 [wandb_init.py:_log_setup():524] Logging user logs to C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_014916-45bjev44\logs\debug.log
+2024-01-15 01:49:16,457 INFO    Thread-11 :44888 [wandb_init.py:_log_setup():525] Logging internal logs to C:\GI_Machine_Learning_Project-master\Wrist_Original_Architecture\wandb\run-20240115_014916-45bjev44\logs\debug-internal.log
+2024-01-15 01:49:16,457 INFO    Thread-11 :44888 [wandb_init.py:init():564] calling init triggers
+2024-01-15 01:49:16,457 INFO    Thread-11 :44888 [wandb_init.py:init():571] wandb.init called with sweep_config: {'batch_size': 16, 'epoch': 10, 'lr': 2e-05, 'num_of_measurements': 1024, 'shape': '64_128'}
+config: {}
+2024-01-15 01:49:16,457 INFO    Thread-11 :44888 [wandb_init.py:init():614] starting backend
+2024-01-15 01:49:16,457 INFO    Thread-11 :44888 [wandb_init.py:init():618] setting up manager
+2024-01-15 01:49:16,466 INFO    Thread-11 :44888 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-01-15 01:49:16,467 INFO    Thread-11 :44888 [wandb_init.py:init():624] backend started and connected
+2024-01-15 01:49:16,480 INFO    Thread-11 :44888 [wandb_run.py:_config_callback():1342] config_cb None None {'batch_size': 16, 'epoch': 10, 'lr': 2e-05, 'num_of_measurements': 1024, 'shape': '64_128'}
+2024-01-15 01:49:16,481 INFO    Thread-11 :44888 [wandb_init.py:init():716] updated telemetry
+2024-01-15 01:49:16,481 INFO    Thread-11 :44888 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2024-01-15 01:49:16,927 INFO    Thread-11 :44888 [wandb_run.py:_on_init():2254] communicating current version
+2024-01-15 01:49:17,222 INFO    Thread-11 :44888 [wandb_run.py:_on_init():2263] got version response upgrade_message: "wandb version 0.16.2 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-01-15 01:49:17,222 INFO    Thread-11 :44888 [wandb_init.py:init():800] starting run threads in backend
+2024-01-15 01:49:17,306 INFO    Thread-11 :44888 [wandb_run.py:_console_start():2233] atexit reg
+2024-01-15 01:49:17,306 INFO    Thread-11 :44888 [wandb_run.py:_redirect():2088] redirect: wrap_raw
+2024-01-15 01:49:17,306 INFO    Thread-11 :44888 [wandb_run.py:_redirect():2153] Wrapping output streams.
+2024-01-15 01:49:17,306 INFO    Thread-11 :44888 [wandb_run.py:_redirect():2178] Redirects installed.
+2024-01-15 01:49:17,306 INFO    Thread-11 :44888 [wandb_init.py:init():841] run started, returning control to user process
+2024-01-15 01:49:17,412 INFO    Thread-11 :44888 [wandb_run.py:_finish():1962] finishing run barilan/GI_Machine_Learning_Project/45bjev44
+2024-01-15 01:49:17,412 INFO    Thread-11 :44888 [wandb_run.py:_atexit_cleanup():2202] got exitcode: 1
+2024-01-15 01:49:17,412 INFO    Thread-11 :44888 [wandb_run.py:_restore():2185] restore
+2024-01-15 01:49:17,412 INFO    Thread-11 :44888 [wandb_run.py:_restore():2191] restore done
+2024-01-15 01:49:24,241 INFO    Thread-11 :44888 [wandb_run.py:_footer_history_summary_info():3760] rendering history
+2024-01-15 01:49:24,241 INFO    Thread-11 :44888 [wandb_run.py:_footer_history_summary_info():3792] rendering summary
+2024-01-15 01:49:24,246 INFO    Thread-11 :44888 [wandb_run.py:_footer_sync_info():3719] logging synced files

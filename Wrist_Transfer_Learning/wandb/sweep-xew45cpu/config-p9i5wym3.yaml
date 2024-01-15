@@ -1,0 +1,14 @@
+wandb_version: 1
+
+epochs:
+  value: 5
+lr:
+  value: 1.0e-05
+model_name:
+  value: ResNet
+num_of_layers_unfreeze:
+  value: 2
+num_of_measurements:
+  value: 512
+reshape_size:
+  value: '256_512'

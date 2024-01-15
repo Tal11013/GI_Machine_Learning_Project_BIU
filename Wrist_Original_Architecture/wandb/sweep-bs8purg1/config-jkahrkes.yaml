@@ -1,0 +1,12 @@
+wandb_version: 1
+
+batch_size:
+  value: 16
+epoch:
+  value: 10
+lr:
+  value: 0.0002
+num_of_measurements:
+  value: 1024
+shape:
+  value: '64_128'

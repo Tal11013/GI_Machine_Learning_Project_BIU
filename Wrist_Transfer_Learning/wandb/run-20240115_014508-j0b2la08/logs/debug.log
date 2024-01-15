@@ -1,0 +1,35 @@
+2024-01-15 01:45:08,788 INFO    Thread-3  :53652 [wandb_setup.py:_flush():76] Current SDK version is 0.16.0
+2024-01-15 01:45:08,788 INFO    Thread-3  :53652 [wandb_setup.py:_flush():76] Configure stats pid to 53652
+2024-01-15 01:45:08,788 INFO    Thread-3  :53652 [wandb_setup.py:_flush():76] Loading settings from C:\Users\iker1\.config\wandb\settings
+2024-01-15 01:45:08,788 INFO    Thread-3  :53652 [wandb_setup.py:_flush():76] Loading settings from C:\GI_Machine_Learning_Project-master\Wrist_Transfer_Learning\wandb\settings
+2024-01-15 01:45:08,788 INFO    Thread-3  :53652 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'Wrist_GI_Transfer_Learning', 'entity': 'barilan', 'root_dir': 'C:\\GI_Machine_Learning_Project-master\\Wrist_Transfer_Learning', 'sweep_id': 'venvwb6x', 'run_id': 'j0b2la08', 'sweep_param_path': 'C:\\GI_Machine_Learning_Project-master\\Wrist_Transfer_Learning\\wandb\\sweep-venvwb6x\\config-j0b2la08.yaml'}
+2024-01-15 01:45:08,788 INFO    Thread-3  :53652 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-01-15 01:45:08,788 INFO    Thread-3  :53652 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'main_sweep.py', 'program_abspath': 'C:\\GI_Machine_Learning_Project-master\\Wrist_Transfer_Learning\\main_sweep.py', 'program': 'C:\\GI_Machine_Learning_Project-master\\Wrist_Transfer_Learning\\main_sweep.py'}
+2024-01-15 01:45:08,789 INFO    Thread-3  :53652 [wandb_init.py:_log_setup():524] Logging user logs to C:\GI_Machine_Learning_Project-master\Wrist_Transfer_Learning\wandb\run-20240115_014508-j0b2la08\logs\debug.log
+2024-01-15 01:45:08,789 INFO    Thread-3  :53652 [wandb_init.py:_log_setup():525] Logging internal logs to C:\GI_Machine_Learning_Project-master\Wrist_Transfer_Learning\wandb\run-20240115_014508-j0b2la08\logs\debug-internal.log
+2024-01-15 01:45:08,789 INFO    Thread-3  :53652 [wandb_init.py:init():564] calling init triggers
+2024-01-15 01:45:08,789 INFO    Thread-3  :53652 [wandb_init.py:init():571] wandb.init called with sweep_config: {'epochs': 5, 'lr': 1e-05, 'model_name': 'ResNet', 'num_of_layers_unfreeze': 2, 'num_of_measurements': 512, 'reshape_size': '64_128'}
+config: {}
+2024-01-15 01:45:08,789 INFO    Thread-3  :53652 [wandb_init.py:init():614] starting backend
+2024-01-15 01:45:08,789 INFO    Thread-3  :53652 [wandb_init.py:init():618] setting up manager
+2024-01-15 01:45:08,795 INFO    Thread-3  :53652 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-01-15 01:45:08,798 INFO    Thread-3  :53652 [wandb_init.py:init():624] backend started and connected
+2024-01-15 01:45:08,811 INFO    Thread-3  :53652 [wandb_run.py:_config_callback():1342] config_cb None None {'epochs': 5, 'lr': 1e-05, 'model_name': 'ResNet', 'num_of_layers_unfreeze': 2, 'num_of_measurements': 512, 'reshape_size': '64_128'}
+2024-01-15 01:45:08,811 INFO    Thread-3  :53652 [wandb_init.py:init():716] updated telemetry
+2024-01-15 01:45:08,811 INFO    Thread-3  :53652 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2024-01-15 01:45:09,264 INFO    Thread-3  :53652 [wandb_run.py:_on_init():2254] communicating current version
+2024-01-15 01:45:09,558 INFO    Thread-3  :53652 [wandb_run.py:_on_init():2263] got version response upgrade_message: "wandb version 0.16.2 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-01-15 01:45:09,558 INFO    Thread-3  :53652 [wandb_init.py:init():800] starting run threads in backend
+2024-01-15 01:45:09,639 INFO    Thread-3  :53652 [wandb_run.py:_console_start():2233] atexit reg
+2024-01-15 01:45:09,639 INFO    Thread-3  :53652 [wandb_run.py:_redirect():2088] redirect: wrap_raw
+2024-01-15 01:45:09,639 INFO    Thread-3  :53652 [wandb_run.py:_redirect():2153] Wrapping output streams.
+2024-01-15 01:45:09,639 INFO    Thread-3  :53652 [wandb_run.py:_redirect():2178] Redirects installed.
+2024-01-15 01:45:09,640 INFO    Thread-3  :53652 [wandb_init.py:init():841] run started, returning control to user process
+2024-01-15 01:45:09,643 INFO    Thread-3  :53652 [wandb_run.py:_finish():1962] finishing run barilan/Wrist_GI_Transfer_Learning/j0b2la08
+2024-01-15 01:45:09,643 INFO    Thread-3  :53652 [wandb_run.py:_atexit_cleanup():2202] got exitcode: 1
+2024-01-15 01:45:09,643 INFO    Thread-3  :53652 [wandb_run.py:_restore():2185] restore
+2024-01-15 01:45:09,644 INFO    Thread-3  :53652 [wandb_run.py:_restore():2191] restore done
+2024-01-15 01:45:12,970 INFO    Thread-3  :53652 [wandb_run.py:_footer_history_summary_info():3760] rendering history
+2024-01-15 01:45:12,970 INFO    Thread-3  :53652 [wandb_run.py:_footer_history_summary_info():3792] rendering summary
+2024-01-15 01:45:12,976 INFO    Thread-3  :53652 [wandb_run.py:_footer_sync_info():3719] logging synced files

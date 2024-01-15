@@ -1,0 +1,39 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.9.13",
+    "heartbeatAt": "2024-01-14T23:45:59.622481",
+    "startedAt": "2024-01-14T23:45:58.756922",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\GI_Machine_Learning_Project-master\\Wrist_Original_Architecture\\sweep_conf.py",
+    "codePathLocal": "sweep_conf.py",
+    "codePath": "sweep_conf.py",
+    "host": "TalComputer",
+    "username": "iker1",
+    "executable": "C:\\GI_Machine_Learning_Project-master\\venv\\Scripts\\python.exe",
+    "cpu_count": 10,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 1700.0,
+        "min": 0.0,
+        "max": 1700.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1700.0,
+            "min": 0.0,
+            "max": 1700.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 951.6455039978027,
+            "used": 210.85573196411133
+        }
+    },
+    "memory": {
+        "total": 15.730949401855469
+    }
+}
