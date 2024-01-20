@@ -4,7 +4,10 @@ from torch.utils.data import Dataset
 from torch import nn
 import preprocessing_wrist
 from preprocessing_wrist import generate_data
+import preposcessing_wrist2
+from preposcessing_wrist2 import generate_data2
 from GI_Wrist import GI_Wrist
+from wrist_cnn_diff import ConvolutionalNetDiff
 from wrist_cnn import ConvolutionalNet
 from train_and_test import train, test
 
@@ -17,13 +20,18 @@ def main_wrist(config):
     num_of_measurements = config.num_of_measurements
     # generate the data ### use this line only if you want to generate the data and transform the photos
     # to GI images BEFORE putting it into the net.
-    # preprocessing_wrist.generate_data("Processed_Dataset/", num_of_measurements, config.shape)
+    try:
+        preprocessing_wrist.generate_data("C:\\Users\\iker1\\OneDrive\\מסמכים\\GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\", num_of_measurements, config.shape)
+    except Exception as e:
+        print("error1")
 
-    # create the dataset
-    path_ending = str(config.num_of_measurements) + "_" + str(config.shape) + ".csv"
-    print(path_ending)
-    csv_path = "C:/GI_Machine_Learning_Project-master/Processed_Dataset/new_dataset_" + path_ending
-    wrist_gi_dataset = GI_Wrist(csv_path)
+        # create the dataset
+        path_ending = str(config.num_of_measurements) + "_" + str(config.shape) + ".csv"
+        print(path_ending)
+        csv_path = r"C:\משתמשים\iker1\OneDrive\Documents\GitHub\GI_Machine_Learning_Project_BIU/Processed_Dataset/new_dataset_" + path_ending
+        wrist_gi_dataset = GI_Wrist(csv_path)
+    except Exception as e:
+        print("error2")
 
     # split the data to train and test
     number_of_samples = len(wrist_gi_dataset)
@@ -48,8 +56,12 @@ def main_wrist(config):
     # create data loader for the test set
     test_loader = torch.utils.data.DataLoader(test_set, batch_size=batch_size, shuffle=False)
 
-    # create the network
+    # create the network and choose if you want the GI imaging to happen before the entering to the net
+    # or during the net - choose only one.
+
+    # model = ConvolutionalNetDiff(num_of_measurements, batch_size).to(device)
     model = ConvolutionalNet(num_of_measurements, batch_size).to(device)
+
     # choose a loss function
     criterion = nn.CrossEntropyLoss()
     # choose an optimizer and learning rate for the training
@@ -99,7 +111,9 @@ def main_wrist_dict(params):
     # create data loader for the test set
     test_loader = torch.utils.data.DataLoader(test_set, batch_size=batch_size, shuffle=False)
 
-    # create the network
+    # create the network and choose if you want the GI imaging to happen before the entering to the net
+    # or during the net - choose only one.
+    #model = ConvolutionalNetDiff(num_of_measurements, batch_size).to(device)
     model = ConvolutionalNet(num_of_measurements, batch_size).to(device)
     # choose a loss function
     criterion = nn.CrossEntropyLoss()
