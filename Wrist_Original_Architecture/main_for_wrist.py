@@ -20,15 +20,14 @@ def main_wrist(config):
     num_of_measurements = config.num_of_measurements
     # generate the data ### use this line only if you want to generate the data and transform the photos
     # to GI images BEFORE putting it into the net.
-    try:
-        preprocessing_wrist.generate_data("C:\\Users\\iker1\\OneDrive\\מסמכים\\GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\", num_of_measurements, config.shape)
-    except Exception as e:
-        print("error1")
+    preprocessing_wrist.generate_data("C:\\Users\\iker1\\OneDrive\\מסמכים\\GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\", num_of_measurements)
 
-        # create the dataset
-        path_ending = str(config.num_of_measurements) + "_" + str(config.shape) + ".csv"
-        print(path_ending)
-        csv_path = r"C:\משתמשים\iker1\OneDrive\Documents\GitHub\GI_Machine_Learning_Project_BIU/Processed_Dataset/new_dataset_" + path_ending
+
+    # create the dataset
+    path_ending = str(config.num_of_measurements) + "_" + str(config.shape) + ".csv"
+    print(path_ending)
+    csv_path = "C:\\Users\\iker1\\OneDrive\\מסמכים\\GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\new_dataset_" + path_ending
+    try:
         wrist_gi_dataset = GI_Wrist(csv_path)
     except Exception as e:
         print("error2")
@@ -72,7 +71,7 @@ def main_wrist(config):
     # Train the model
     model = train(model, train_loader, criterion, optimizer, number_of_epochs, batch_size)
     # Evaluate the trained model
-    test_acc= test(model, test_loader, criterion, batch_size)
+    test_acc = test(model, test_loader, criterion, batch_size)
     return test_acc
 
 

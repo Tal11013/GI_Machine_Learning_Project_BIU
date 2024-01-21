@@ -17,7 +17,8 @@ def generate_data2(folder_path, num_of_measurement, shape=(128, 256)):
         torch.cuda.empty_cache()
         # get the image path from the csv file - .iloc[i,0] is used to access the value of row i and column 0 in the
         # data file (column 0 in the data gives the image path)
-        image_path = data.iloc[i, 0]
+        image_path = "C:\\Users\\iker1\\Downloads\\Xray_images\\"
+        image_path += data.iloc[i, 0]
         # read the png image from the path
         image_path += ".png"
         img = Image.open(image_path)
