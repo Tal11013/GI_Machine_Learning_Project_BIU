@@ -72,6 +72,7 @@ def test(model, test_loader, criterion, batch_size):
 
     # print the test loss and accuracy
     test_loss = test_loss / len(test_loader.dataset)
+    accuracy = 100. * correct / len(test_loader.dataset)
     print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.2f}%)\n'.format(
         test_loss, correct, len(test_loader.dataset), 100. * correct / len(test_loader.dataset)))
-    return 100. * correct / len(test_loader.dataset)
+    return accuracy, test_loss

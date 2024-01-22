@@ -52,7 +52,7 @@ def generate_data(folder_path, num_of_measurement, shape=(64, 128)):
         try:
             new_data = pd.concat([new_data, pd.DataFrame([[folder_path + "measurements/"+str(num_of_measurement) + "_"
                                                            + str(shape[0]) + "_" + str(shape[1]) + "/" + str(i) + ".csv",
-                                                           data['label'].iloc[i]]], columns=['path', 'label'])])
+                                                           data['fracture_visible'].iloc[i]]], columns=['path', 'label'])])
         except Exception as a:
             print(f"error: {type(a).__name__} - {a}")
             traceback.print_exc()

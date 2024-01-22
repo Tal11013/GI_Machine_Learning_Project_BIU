@@ -124,6 +124,6 @@ def main_wrist_dict(params):
     # Train the model
     model = train(model, train_loader, criterion, optimizer, number_of_epochs, batch_size)
     # Evaluate the trained model
-    test_acc = test(model, test_loader, criterion, batch_size)
-    return test_acc
+    test_acc, test_loss = test(model, test_loader, criterion, batch_size)
+    return test_acc, test_loss
 

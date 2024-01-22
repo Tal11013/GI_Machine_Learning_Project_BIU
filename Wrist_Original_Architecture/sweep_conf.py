@@ -7,8 +7,8 @@ wandb.login()
 
 def main():
     wandb.init()
-    test_acc = main_wrist(wandb.config)
-    wandb.log({"Test accuracy": test_acc})
+    test_acc, test_loss = main_wrist(wandb.config)
+    wandb.log({"Test accuracy": test_acc, "Test loss": test_loss})
 
 
 # 2: Define the search space
