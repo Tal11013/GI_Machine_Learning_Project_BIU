@@ -8,8 +8,6 @@ import preposcessing_wrist2
 from preposcessing_wrist2 import generate_data2
 from GI_Wrist import GI_Wrist
 from wrist_cnn_diff import ConvolutionalNetDiff
-from wrist_cnn_diff2 import ConvolutionalNetDiff2
-from wrist_cnn_diff3 import ConvolutionalNetDiff3
 from wrist_cnn import ConvolutionalNet
 from train_and_test import train, test
 
