@@ -7,10 +7,9 @@ wandb.login()
 
 def main():
     wandb.init()
-    config = wandb.config
-    for epoch in range(config.epoch):
-        test_acc, test_loss = main_wrist(wandb.config)
-        wandb.log({"Test accuracy": test_acc, "Test loss": test_loss, "Epoch": config.epoch})
+    #for epoch in range(config.epoch):
+    test_acc, test_loss = main_wrist(wandb.config)
+    wandb.log({"Test accuracy": test_acc, "Test loss": test_loss})
 
 
 
