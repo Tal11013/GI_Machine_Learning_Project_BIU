@@ -8,7 +8,7 @@ import traceback
 
 
 def generate_data(folder_path, num_of_measurement, shape=(64, 128)):
-    # Convert the string shape to a tuple of integers
+    # Convert th3333333333333333333e string shape to a tuple of integers
     width, height = map(int, shape.split('_'))
     shape_tuple = (width, height)
     # create reference_matrix - a random matrix in the shape of number of measurments (photos) and the pixels each photo

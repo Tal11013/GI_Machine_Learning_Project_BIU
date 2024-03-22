@@ -23,7 +23,7 @@ def main_wrist(config):
     # generate the data ### use this line only if you want to generate the data and transform the photos
     # to GI images BEFORE putting it into the net.
 
-    #preposcessing_wrist2.generate_data2("C:\\Users\\iker1\\OneDrive\\מסמכים\\GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\", num_of_measurements, shape)
+    preposcessing_wrist2.generate_data2("C:\\Users\\iker1\\OneDrive\\מסמכים\\GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\", num_of_measurements, shape)
     #preprocessing_wrist.generate_data("C:\\Users\\iker1\\OneDrive\\מסמכים\\GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\", num_of_measurements, shape)
 
     # create the dataset

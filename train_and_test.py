@@ -1,4 +1,5 @@
 import torch
+import wandb
 from torchvision.models import InceptionOutputs
 from tqdm import tqdm
 
@@ -42,6 +43,7 @@ def train(model, train_loader, criterion, optimizer, number_of_epochs, batch_siz
         # calculate average loss over an epoch
         train_loss = train_loss / len(train_loader.dataset)
         accuracy = correct / total
+        wandb.log({"Epoch": epoch + 1, "Train Loss": train_loss, "Accuracy": accuracy})
         print('Epoch: {} \tTraining Loss: {:.6f} \tAccuracy: {:.6f}'.format(epoch + 1, train_loss, 100 * accuracy))
     return model
 
