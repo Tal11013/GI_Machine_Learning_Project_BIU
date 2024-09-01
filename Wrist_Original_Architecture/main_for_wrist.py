@@ -1,5 +1,6 @@
 # import the required libraries
 import torch
+import torch.nn.functional as F
 from torch.utils.data import Dataset
 from torch import nn
 import preprocessing_wrist
@@ -10,6 +11,7 @@ from GI_Wrist import GI_Wrist
 from wrist_cnn_diff import ConvolutionalNetDiff
 from wrist_cnn import ConvolutionalNet
 from train_and_test import train, test
+import torchvision.transforms as transforms
 
 
 def main_wrist(config):
@@ -20,17 +22,26 @@ def main_wrist(config):
     shape = config.shape
     width, height = map(int, shape.split('_'))
     shape_tuple = (width, height)
+
+    # Define the transform
+    transform = transforms.Compose([
+        # Resize any 1:2 image tensor to 128x128
+        transforms.Lambda(lambda x: F.interpolate(x.unsqueeze(0).unsqueeze(0), size=(128, 128), mode='bilinear',
+                                                  align_corners=False).squeeze(0)),
+        # Normalize the resized tensor
+        transforms.Normalize(mean=[0.5], std=[0.5])
+    ])
+
     # generate the data ### use this line only if you want to generate the data and transform the photos
     # to GI images BEFORE putting it into the net.
-
-    preposcessing_wrist2.generate_data2("C:\\Users\\iker1\\OneDrive\\מסמכים\\GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\", num_of_measurements, shape)
+    # preposcessing_wrist2.generate_data2("C:\\Users\\iker1\\OneDrive\\מסמכים\\GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\", num_of_measurements, shape_tuple)
     #preprocessing_wrist.generate_data("C:\\Users\\iker1\\OneDrive\\מסמכים\\GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\", num_of_measurements, shape)
 
     # create the dataset
     path_ending = str(config.num_of_measurements) + "_" + str(shape) + ".csv"
     print(path_ending)
     csv_path = "C:\\Users\\iker1\\OneDrive\\מסמכים\\GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\new_dataset_" + path_ending
-    wrist_gi_dataset = GI_Wrist(csv_path)
+    wrist_gi_dataset = GI_Wrist(csv_path, transform=transform)
     # split the data to train and test
     number_of_samples = len(wrist_gi_dataset)
     # define batch size
@@ -52,12 +63,13 @@ def main_wrist(config):
     train_loader = torch.utils.data.DataLoader(train_set, batch_size=batch_size, shuffle=True)
     # create data loader for the test set
     test_loader = torch.utils.data.DataLoader(test_set, batch_size=batch_size, shuffle=False)
-
     # create the network and choose if you want the GI imaging to happen before the entering to the net
     # or during the net - choose only one.
 
-    #model = ConvolutionalNet(num_of_measurements, batch_size).to(device)
+    # model = ConvolutionalNet(num_of_measurements, batch_size).to(device)
     model = ConvolutionalNetDiff(num_of_measurements, batch_size, shape_tuple).to(device)
+
+
     # choose a loss function
     criterion = nn.CrossEntropyLoss()
     # choose an optimizer and learning rate for the training
@@ -65,8 +77,12 @@ def main_wrist(config):
     # choose the number of epochs
     number_of_epochs = config.epoch
 
-    # Train the model
-    model = train(model, train_loader, criterion, optimizer, number_of_epochs, batch_size)
+    try:
+        # Train the model
+        model = train(model, train_loader, criterion, optimizer, number_of_epochs, batch_size)
+    except:
+        print("error4")
+
     # Evaluate the trained model
     test_acc, test_loss = test(model, test_loader, criterion, batch_size)
     return test_acc, test_loss

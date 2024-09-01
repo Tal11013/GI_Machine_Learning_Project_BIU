@@ -30,6 +30,7 @@ def train(model, train_loader, criterion, optimizer, number_of_epochs, batch_siz
             # calculate the loss
             loss = criterion(y_pred, y_label)
             # backward pass: compute gradient of the loss
+
             loss.backward()
             # update the weights
             optimizer.step()
@@ -39,6 +40,7 @@ def train(model, train_loader, criterion, optimizer, number_of_epochs, batch_siz
             predicted = y_pred.max(1, keepdim=True)[1]
             total += y_label.size(0)
             correct += predicted.eq(y_label.view_as(predicted)).sum().item()
+
 
         # calculate average loss over an epoch
         train_loss = train_loss / len(train_loader.dataset)
