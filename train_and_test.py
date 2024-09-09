@@ -24,6 +24,7 @@ def train(model, train_loader, criterion, optimizer, number_of_epochs, batch_siz
             x_data.requires_grad = True
             # forward step
             y_pred = model(x_data)
+
             # if y_pres type is InceptionOutputs, then take the logits
             if type(y_pred) == InceptionOutputs:
                 y_pred = y_pred.logits

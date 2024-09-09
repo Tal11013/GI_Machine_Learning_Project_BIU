@@ -15,7 +15,7 @@ class DiffuserLayer(nn.Module):
 
 
 class ConvolutionalNetDiff(nn.Module):
-    def __init__(self, num_of_measurements, batch_size, shape):
+    def __init__(self, num_of_measurements, batch_size, shape=(128, 128)):
         super(ConvolutionalNetDiff, self).__init__()
         self.num_of_measurements = num_of_measurements
         self.batch_size = batch_size

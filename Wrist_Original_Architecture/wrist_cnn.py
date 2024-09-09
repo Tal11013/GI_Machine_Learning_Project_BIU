@@ -3,11 +3,13 @@ import torch.nn.functional as F
 import torch
 
 class ConvolutionalNet(nn.Module):
-    def __init__(self, num_of_measurements, batch_size):
+    def __init__(self, batch_size, shape=(128, 128)):
         super(ConvolutionalNet, self).__init__()
         self.batch_size = batch_size
+        self.shape = shape
+        num_of_features = shape[0] * shape[1]
         self.mp = nn.MaxPool2d(2)
-        self.fc1 = nn.Linear(num_of_measurements, 2048)
+        self.fc1 = nn.Linear(num_of_features, 2048)
         self.fc2 = nn.Linear(2048, 1024)
         self.fc3 = nn.Linear(1024, 2048)
         self.conv1 = nn.Conv2d(1, 16, kernel_size=5, padding=2)

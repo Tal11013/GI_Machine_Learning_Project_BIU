@@ -19,7 +19,7 @@ sweep_configuration = {
         {
             'lr': {'values': [0.0001, 0.0002, 0.001]},
             'epoch': {'values': [10, 20, 50]},
-            'shape': {'values': ["64_128"]},
+            'shape': {'values': ["32_64"]},
             'num_of_measurements': {'values': [1024]},
             'batch_size': {'values': [16]},
         }
