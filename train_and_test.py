@@ -24,12 +24,14 @@ def train(model, train_loader, criterion, optimizer, number_of_epochs, batch_siz
             x_data.requires_grad = True
             # forward step
             y_pred = model(x_data)
+
             # if y_pres type is InceptionOutputs, then take the logits
             if type(y_pred) == InceptionOutputs:
                 y_pred = y_pred.logits
             # calculate the loss
             loss = criterion(y_pred, y_label)
             # backward pass: compute gradient of the loss
+
             loss.backward()
             # update the weights
             optimizer.step()
@@ -40,10 +42,11 @@ def train(model, train_loader, criterion, optimizer, number_of_epochs, batch_siz
             total += y_label.size(0)
             correct += predicted.eq(y_label.view_as(predicted)).sum().item()
 
+
         # calculate average loss over an epoch
         train_loss = train_loss / len(train_loader.dataset)
         accuracy = correct / total
-        wandb.log({"Epoch": epoch + 1, "Train Loss": train_loss, "Accuracy": accuracy})
+        wandb.log({"Epoch": epoch + 1, "Train Loss": train_loss, "Train Accuracy": accuracy})
         print('Epoch: {} \tTraining Loss: {:.6f} \tAccuracy: {:.6f}'.format(epoch + 1, train_loss, 100 * accuracy))
     return model
 
@@ -75,6 +78,7 @@ def test(model, test_loader, criterion, batch_size):
     # print the test loss and accuracy
     test_loss = test_loss / len(test_loader.dataset)
     accuracy = 100. * correct / len(test_loader.dataset)
+    wandb.log({"Test Loss": test_loss, "Test Accuracy": accuracy})
     print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.2f}%)\n'.format(
         test_loss, correct, len(test_loader.dataset), 100. * correct / len(test_loader.dataset)))
     return accuracy, test_loss

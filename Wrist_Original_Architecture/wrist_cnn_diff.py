@@ -4,26 +4,32 @@ import torch
 
 
 class DiffuserLayer(nn.Module):
-    def __init__(self, input_size, diffuser_weights):
+    def __init__(self, input_size, num_of_masks):
         super(DiffuserLayer, self).__init__()
         self.input_size = input_size
-        self.diffuser_weights = nn.Parameter(diffuser_weights)
+        self.num_of_masks = num_of_masks
+
+        # Create diffuser weights with the shape (input_size, num_of_masks)
+        self.diffuser_weights = nn.Parameter(torch.ones((input_size, num_of_masks), requires_grad=True))
 
     def forward(self, x):
-        diffused_input = x * self.diffuser_weights
-        return diffused_input
+        # Element-wise multiplication with the masks
+        x_after_gi = x @ self.diffuser_weights  # Matrix multiplication between input and diffuser weights
+        return x_after_gi
 
 
 class ConvolutionalNetDiff(nn.Module):
-    def __init__(self, num_of_measurements, batch_size, shape):
+    def __init__(self, batch_size, shape=(128, 128), sampling_rate=1.0):
         super(ConvolutionalNetDiff, self).__init__()
-        self.num_of_measurements = num_of_measurements
         self.batch_size = batch_size
         self.shape = shape
+        self.sampling_rate = sampling_rate
         num_of_features = shape[0] * shape[1]
 
-        diffuser_weights = torch.ones((num_of_features,), requires_grad=True)
-        self.diffuser = DiffuserLayer(num_of_features, diffuser_weights)
+        # Calculate the number of masks based on the sampling rate
+        num_of_masks = int(num_of_features * sampling_rate)
+
+        self.diffuser = DiffuserLayer(num_of_features, num_of_masks)
 
         self.mp = nn.MaxPool2d(2)
         self.conv1 = nn.Conv2d(1, 16, kernel_size=5, padding=2)

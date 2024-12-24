@@ -2,7 +2,7 @@
 import wandb
 from main_for_wrist import main_wrist
 
-wandb.login()
+wandb.login(key = "046780ec306c02f19ce204adc33cbc86e04e80fd")
 
 
 def main():
@@ -17,11 +17,11 @@ sweep_configuration = {
     'metric': {'goal': 'maximize', 'name': 'Test accuracy'},
     'parameters':
         {
-            'lr': {'values': [0.0001, 0.0002, 0.001]},
-            'epoch': {'values': [10, 20, 50]},
-            'shape': {'values': ["256_512"]},
-            'num_of_measurements': {'values': [1024]},
+            'lr': {'values': [0.0002]},
+            'epoch': {'values': [10]},
+            'shape': {'values': ["32_64"]},
             'batch_size': {'values': [16]},
+            'sampling_rate': {'values': [0.1, 0.5, 0.75]}
         }
 }
 
