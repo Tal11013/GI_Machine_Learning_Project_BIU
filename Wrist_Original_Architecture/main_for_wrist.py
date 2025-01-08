@@ -37,11 +37,14 @@ def main_wrist(config):
     # to GI images BEFORE putting it into the net.
     # preposcessing_wrist2.generate_data2("C:\\Users\\iker1\\OneDrive\\מסמכים\\GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\", shape_tuple)
     # preprocessing_wrist.generate_data("C:\\Users\\iker1\\OneDrive\\מסמכים\\GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\", shape_tuple)
-   
+    preposcessing_wrist2.generate_data2("/content/drive/MyDrive/Processed_Datasets/", shape_tuple)
+    # preprocessing_wrist.generate_data("/content/drive/MyDrive/Processed_Datasets/", shape_tuple)
+
     # create the dataset
     path_ending = str(shape) + ".csv"
     print(path_ending)
-    csv_path = "C:\\Users\\iker1\\OneDrive\\מסמכים\\GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\new_dataset_" + path_ending
+    # csv_path = "C:\\Users\\iker1\\OneDrive\\מסמכים\\GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\new_dataset_" + path_ending
+    csv_path = "/content/drive/MyDrive/Processed_Datasets/new_dataset_" + path_ending
     wrist_gi_dataset = GI_Wrist(csv_path, transform = transform)
     # split the data to train and test
     number_of_samples = len(wrist_gi_dataset)
@@ -70,8 +73,8 @@ def main_wrist(config):
 
     sampling_rate = config.sampling_rate
 
-    model = ConvolutionalNet(batch_size).to(device)
-    # model = ConvolutionalNetDiff(batch_size, sampling_rate).to(device)
+    # model = ConvolutionalNet(batch_size).to(device)
+    model = ConvolutionalNetDiff(batch_size, (128, 128), sampling_rate).to(device)
 
 
     # choose a loss function
@@ -127,7 +130,7 @@ def main_wrist_dict(params):
 
     # create the network and choose if you want the GI imaging to happen before the entering to the net
     # or during the net - choose only one.
-    #model = ConvolutionalNetDiff(num_of_measurements, batch_size).to(device)
+    #model = ConvolutionalNetDiff(num_of_measurements, batch_size, sampling_rate).to(device)
     model = ConvolutionalNet(num_of_measurements, batch_size).to(device)
     # choose a loss function
     criterion = nn.CrossEntropyLoss()

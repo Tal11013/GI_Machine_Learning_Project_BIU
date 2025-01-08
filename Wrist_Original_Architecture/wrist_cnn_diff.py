@@ -27,7 +27,7 @@ class ConvolutionalNetDiff(nn.Module):
         num_of_features = shape[0] * shape[1]
 
         # Calculate the number of masks based on the sampling rate
-        num_of_masks = int(num_of_features * sampling_rate)
+        num_of_masks = round(num_of_features * sampling_rate)
 
         self.diffuser = DiffuserLayer(num_of_features, num_of_masks)
 
