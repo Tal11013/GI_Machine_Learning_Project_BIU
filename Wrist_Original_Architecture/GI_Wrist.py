@@ -1,6 +1,24 @@
 from torch.utils.data import Dataset
 import pandas as pd
 import torch
+import cv2
+import numpy as np
+
+def debug_visualize_opencv(image_tensor):
+    """
+    Uses OpenCV to visualize a single image. Accepts either PyTorch tensor or NumPy array.
+    """
+    if isinstance(image_tensor, torch.Tensor):
+        # Convert from C x H x W (Tensor) to H x W x C (NumPy)
+        image_tensor = image_tensor.permute(1, 2, 0).cpu().detach().numpy()
+
+    # Convert float to 8-bit image (0-255 range)
+    image_tensor = (image_tensor - image_tensor.min()) / (image_tensor.max() - image_tensor.min()) * 255
+    image_tensor = np.uint8(image_tensor)
+
+    cv2.imshow('Debug Visualization', image_tensor)
+    cv2.waitKey(0)  # Wait for a key press to close
+    cv2.destroyAllWindows()
 
 
 # This is our custom dataset class
@@ -22,6 +40,7 @@ class GI_Wrist(Dataset):
         # transform the measurements if needed
         if self.transform:
             measurements = self.transform(measurements)
+        debug_visualize_opencv(measurements)
         # measurements = measurements.repeat(3, 1, 1)
         # read the label at the given index and convert it to a tensor
         if self.data['label'][index] == 1:

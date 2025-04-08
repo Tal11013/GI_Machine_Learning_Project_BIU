@@ -12,12 +12,42 @@ from wrist_cnn_diff import ConvolutionalNetDiff
 from wrist_cnn import ConvolutionalNet
 from train_and_test import train, test
 import torchvision.transforms as transforms
+import gc
 
+# Clear all allocated memory
+torch.cuda.empty_cache()
+
+# Optionally reset the CUDA memory allocator
+torch.cuda.reset_accumulated_memory_stats()
+torch.cuda.reset_peak_memory_stats()
+torch.cuda.reset_max_memory_allocated()
+torch.cuda.reset_max_memory_cached()
+
+gc.collect()
+
+
+
+Processed_Datasets_Tal = ("C:\\Users\\iker1\\OneDrive\\מסמכים\\"
+                           "GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\")
+
+Processed_Datasets_Alon = "C:\\Users\\alonl\\Downloads\\Processed_Dataset\\"
 
 def main_wrist(config):
+
+
     # use cuda if available
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     print(device)
+
+    # Clear all allocated memory
+    torch.cuda.empty_cache()
+
+    # Optionally reset the CUDA memory allocator
+    torch.cuda.reset_accumulated_memory_stats()
+    torch.cuda.reset_peak_memory_stats()
+    torch.cuda.reset_max_memory_allocated()
+    torch.cuda.reset_max_memory_cached()
+
     shape = config.shape
     width, height = map(int, shape.split('_'))
     shape_tuple = (width, height)
@@ -35,16 +65,17 @@ def main_wrist(config):
 
     # generate the data ### use this line only if you want to generate the data and transform the photos
     # to GI images BEFORE putting it into the net.
-    # preposcessing_wrist2.generate_data2("C:\\Users\\iker1\\OneDrive\\מסמכים\\GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\", shape_tuple)
-    # preprocessing_wrist.generate_data("C:\\Users\\iker1\\OneDrive\\מסמכים\\GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\", shape_tuple)
-    preposcessing_wrist2.generate_data2("/content/drive/MyDrive/Processed_Datasets/", shape_tuple)
+    # preposcessing_wrist2.generate_data2(Processed_Datasets_Alon, shape_tuple)
+    # preprocessing_wrist.generate_data(Processed_Datasets_Alon, shape_tuple)
+
+    # preposcessing_wrist2.generate_data2("/content/drive/MyDrive/Processed_Datasets/", shape_tuple)
     # preprocessing_wrist.generate_data("/content/drive/MyDrive/Processed_Datasets/", shape_tuple)
 
     # create the dataset
     path_ending = str(shape) + ".csv"
     print(path_ending)
-    # csv_path = "C:\\Users\\iker1\\OneDrive\\מסמכים\\GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\new_dataset_" + path_ending
-    csv_path = "/content/drive/MyDrive/Processed_Datasets/new_dataset_" + path_ending
+    csv_path = Processed_Datasets_Alon + "new_dataset_" + path_ending
+    # csv_path = "/content/drive/MyDrive/Processed_Datasets/new_dataset_" + path_ending
     wrist_gi_dataset = GI_Wrist(csv_path, transform = transform)
     # split the data to train and test
     number_of_samples = len(wrist_gi_dataset)
@@ -89,6 +120,7 @@ def main_wrist(config):
 
     # Evaluate the trained model
     test_acc, test_loss = test(model, test_loader, criterion, batch_size)
+
     return test_acc, test_loss
 
 

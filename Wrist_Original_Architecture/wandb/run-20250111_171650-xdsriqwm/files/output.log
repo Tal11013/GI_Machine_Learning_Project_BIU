@@ -1,0 +1,7 @@
+cuda:0
+32_64.csv
+  0%|          | 0/1016 [00:00<?, ?it/s]
+Input size before DiffuserLayer: torch.Size([16, 1, 128, 128])
+Input size before DiffuserLayer: torch.Size([16, 16384])
+Size before reshaping for convolutional layers: torch.Size([16, 8192])
+Problem in reshaping before convolutional layers: shape '[16, 1, 128, 128]' is invalid for input of size 131072

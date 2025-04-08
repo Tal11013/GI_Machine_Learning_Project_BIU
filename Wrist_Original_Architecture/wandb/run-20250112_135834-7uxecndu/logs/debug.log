@@ -1,0 +1,30 @@
+2025-01-12 13:58:34,960 INFO    Thread-15 (_run_job):15272 [wandb_setup.py:_flush():68] Current SDK version is 0.19.2
+2025-01-12 13:58:34,961 INFO    Thread-15 (_run_job):15272 [wandb_setup.py:_flush():68] Configure stats pid to 15272
+2025-01-12 13:58:34,961 INFO    Thread-15 (_run_job):15272 [wandb_setup.py:_flush():68] Loading settings from C:\Users\alonl\.config\wandb\settings
+2025-01-12 13:58:34,961 INFO    Thread-15 (_run_job):15272 [wandb_setup.py:_flush():68] Loading settings from C:\Users\alonl\PycharmProjects\GI_Machine_Learning_Project_BIU\Wrist_Original_Architecture\wandb\settings
+2025-01-12 13:58:34,961 INFO    Thread-15 (_run_job):15272 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-12 13:58:34,962 INFO    Thread-15 (_run_job):15272 [wandb_init.py:_log_setup():523] Logging user logs to C:\Users\alonl\PycharmProjects\GI_Machine_Learning_Project_BIU\Wrist_Original_Architecture\wandb\run-20250112_135834-7uxecndu\logs\debug.log
+2025-01-12 13:58:34,962 INFO    Thread-15 (_run_job):15272 [wandb_init.py:_log_setup():524] Logging internal logs to C:\Users\alonl\PycharmProjects\GI_Machine_Learning_Project_BIU\Wrist_Original_Architecture\wandb\run-20250112_135834-7uxecndu\logs\debug-internal.log
+2025-01-12 13:58:34,962 INFO    Thread-15 (_run_job):15272 [wandb_init.py:init():641] calling init triggers
+2025-01-12 13:58:34,962 INFO    Thread-15 (_run_job):15272 [wandb_init.py:init():647] wandb.init called with sweep_config: {'batch_size': 16, 'epoch': 10, 'lr': 0.0002, 'sampling_rate': 0.75, 'shape': '32_64'}
+config: {}
+2025-01-12 13:58:34,962 INFO    Thread-15 (_run_job):15272 [wandb_init.py:init():674] starting backend
+2025-01-12 13:58:35,176 INFO    Thread-15 (_run_job):15272 [wandb_init.py:init():678] sending inform_init request
+2025-01-12 13:58:35,182 INFO    Thread-15 (_run_job):15272 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=spawn, using: spawn
+2025-01-12 13:58:35,183 INFO    Thread-15 (_run_job):15272 [wandb_init.py:init():693] backend started and connected
+2025-01-12 13:58:35,183 INFO    Thread-15 (_run_job):15272 [wandb_run.py:_config_callback():1283] config_cb None None {'batch_size': 16, 'epoch': 10, 'lr': 0.0002, 'sampling_rate': 0.75, 'shape': '32_64'}
+2025-01-12 13:58:35,184 INFO    Thread-15 (_run_job):15272 [wandb_init.py:init():786] updated telemetry
+2025-01-12 13:58:35,259 INFO    Thread-15 (_run_job):15272 [wandb_init.py:init():818] communicating run to backend with 90.0 second timeout
+2025-01-12 13:58:35,545 INFO    Thread-15 (_run_job):15272 [wandb_init.py:init():868] starting run threads in backend
+2025-01-12 13:58:35,679 INFO    Thread-15 (_run_job):15272 [wandb_run.py:_console_start():2415] atexit reg
+2025-01-12 13:58:35,680 INFO    Thread-15 (_run_job):15272 [wandb_run.py:_redirect():2265] redirect: wrap_raw
+2025-01-12 13:58:35,680 INFO    Thread-15 (_run_job):15272 [wandb_run.py:_redirect():2330] Wrapping output streams.
+2025-01-12 13:58:35,680 INFO    Thread-15 (_run_job):15272 [wandb_run.py:_redirect():2355] Redirects installed.
+2025-01-12 13:58:35,680 INFO    Thread-15 (_run_job):15272 [wandb_init.py:init():910] run started, returning control to user process
+2025-01-12 13:58:38,483 INFO    Thread-15 (_run_job):15272 [wandb_run.py:_finish():2140] finishing run barilan/GI_Machine_Learning_Project/7uxecndu
+2025-01-12 13:58:38,484 INFO    Thread-15 (_run_job):15272 [wandb_run.py:_atexit_cleanup():2380] got exitcode: 1
+2025-01-12 13:58:38,484 INFO    Thread-15 (_run_job):15272 [wandb_run.py:_restore():2362] restore
+2025-01-12 13:58:38,484 INFO    Thread-15 (_run_job):15272 [wandb_run.py:_restore():2368] restore done
+2025-01-12 13:58:40,455 INFO    Thread-15 (_run_job):15272 [wandb_run.py:_footer_history_summary_info():3984] rendering history
+2025-01-12 13:58:40,455 INFO    Thread-15 (_run_job):15272 [wandb_run.py:_footer_history_summary_info():4016] rendering summary
+2025-01-12 13:58:40,463 INFO    Thread-15 (_run_job):15272 [wandb_run.py:_footer_sync_info():3945] logging synced files

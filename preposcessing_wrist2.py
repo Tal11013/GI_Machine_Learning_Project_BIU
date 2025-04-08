@@ -18,8 +18,8 @@ def generate_data2(folder_path, shape=(128, 256)):
         torch.cuda.empty_cache()
         # get the image path from the csv file - .iloc[i,0] is used to access the value of row i and column 0 in the
         # data file (column 0 in the data gives the image path)
-        # image_path = "C:\\Users\\iker1\\Downloads\\Xray_images\\"
-        image_path = "/content/drive/MyDrive/Processed_Datasets_Xray_Images_Unzipped/Xray_Images/"
+        image_path = "C:\\Users\\alonl\\Downloads\\Xray_images\\"
+        # image_path = "/content/drive/MyDrive/Processed_Datasets_Xray_Images_Unzipped/Xray_Images/"
         image_path += data.iloc[i, 0]
         # read the png image from the path
         image_path += ".png"
@@ -34,18 +34,18 @@ def generate_data2(folder_path, shape=(128, 256)):
         img = np.array(img_bw)
         # if cuda is available, move the img to cuda
         # Create the parent folder if it doesn't exist
-        parent_folder = folder_path + "Measurements_Unzipped/" + "measurements/" + str(shape[0]) + "_" + str(
+        parent_folder = folder_path + "measurements/" + str(shape[0]) + "_" + str(
             shape[1])
         if not os.path.exists(parent_folder):
             os.makedirs(parent_folder)
         # save the measurements to csv file
-        csv_save_path = folder_path + "Measurements_Unzipped/" + "measurements/" + str(shape[0]) + "_" + str(
+        csv_save_path = folder_path + "measurements/" + str(shape[0]) + "_" + str(
             shape[1]) + "/" + str(i) + ".csv"
         pd.DataFrame(img).to_csv(csv_save_path, index=False)
         loaded_img = pd.read_csv(csv_save_path)
 
         # save the path and the label to the new general csv file ("new_data")
-        new_data = pd.concat([new_data, pd.DataFrame([[folder_path + "Measurements_Unzipped/" + "measurements/"
+        new_data = pd.concat([new_data, pd.DataFrame([[folder_path + "measurements/"
                                                        + str(shape[0]) + "_" + str(shape[1]) + "/" + str(i) + ".csv",
                                                        data['fracture_visible'].iloc[i]]], columns=['path', 'label'])])
 

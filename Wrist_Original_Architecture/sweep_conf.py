@@ -9,6 +9,7 @@ def main():
     wandb.init()
     #for epoch in range(config.epoch):
     test_acc, test_loss = main_wrist(wandb.config)
+    print(test_acc, test_loss)
 
 
 # 2: Define the search space
@@ -21,7 +22,7 @@ sweep_configuration = {
             'epoch': {'values': [10]},
             'shape': {'values': ["32_64"]},
             'batch_size': {'values': [16]},
-            'sampling_rate': {'values': [0.1, 0.5, 0.75]}
+            'sampling_rate': {'values': [0.2, 0.5, 0.75]}
         }
 }
 

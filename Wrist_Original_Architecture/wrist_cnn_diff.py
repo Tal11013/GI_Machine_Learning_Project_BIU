@@ -47,6 +47,8 @@ class ConvolutionalNetDiff(nn.Module):
         self.fc4 = nn.Linear(2048, 1024)  # Adjusted dynamically if needed
         self.fc5 = nn.Linear(1024, 2)
 
+        self.fc_fix = nn.Linear(round(shape[0] * shape[1] * sampling_rate), 16384)
+
     def forward(self, x):
         batch_size = x.size(0)  # Dynamically determine batch size
 
@@ -54,8 +56,11 @@ class ConvolutionalNetDiff(nn.Module):
         x = torch.flatten(x, 1)
         x = self.diffuser(x)
 
+        x = self.fc_fix(x)
+
         # Reshape for convolutional layers
         x = x.view(batch_size, 1, *self.shape)
+
 
         # Convolutional and pooling layers
         x = F.relu(self.mp(self.bn1(self.conv1(x))))

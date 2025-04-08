@@ -1,0 +1,7 @@
+cuda:0
+32_64.csv
+  0%|          | 0/1016 [00:00<?, ?it/s]
+torch.Size([16, 1, 128, 128])
+torch.Size([16, 16384])
+torch.Size([16, 1638])
+Problem in reshaping before convolutional layers: 'ConvolutionalNetDiff' object has no attribute 'num_of_masks'

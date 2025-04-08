@@ -29,5 +29,7 @@ class GI_Wrist(Dataset):
         else:
             y_label = 0
 
+        print(f"[DEBUG] Measurements at index {index}: {measurements}")
+
         # return the measurements and the label
         return measurements, y_label

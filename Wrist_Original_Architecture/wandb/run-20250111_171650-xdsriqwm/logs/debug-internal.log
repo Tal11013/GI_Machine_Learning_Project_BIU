@@ -1,0 +1,16 @@
+{"time":"2025-01-11T17:16:50.9250081+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"C:\\Users\\alonl\\PycharmProjects\\GI_Machine_Learning_Project_BIU\\Wrist_Original_Architecture\\wandb\\run-20250111_171650-xdsriqwm\\logs\\debug-core.log"}
+{"time":"2025-01-11T17:16:51.0449481+02:00","level":"INFO","msg":"created new stream","id":"xdsriqwm"}
+{"time":"2025-01-11T17:16:51.0449481+02:00","level":"INFO","msg":"stream: started","id":"xdsriqwm"}
+{"time":"2025-01-11T17:16:51.0449481+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"xdsriqwm"}
+{"time":"2025-01-11T17:16:51.0449481+02:00","level":"INFO","msg":"handler: started","stream_id":"xdsriqwm"}
+{"time":"2025-01-11T17:16:51.0449481+02:00","level":"INFO","msg":"sender: started","stream_id":"xdsriqwm"}
+{"time":"2025-01-11T17:16:51.2917422+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-11T17:16:51.9799814+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-11T17:16:51.9804854+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-11T17:16:52.8011333+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-11T17:16:52.9903241+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 2-6","runtime_seconds":0.1891908}],"total_operations":1}}
+{"time":"2025-01-11T17:16:54.0540286+02:00","level":"INFO","msg":"stream: closing","id":"xdsriqwm"}
+{"time":"2025-01-11T17:16:54.0541191+02:00","level":"INFO","msg":"handler: closed","stream_id":"xdsriqwm"}
+{"time":"2025-01-11T17:16:54.0541191+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xdsriqwm"}
+{"time":"2025-01-11T17:16:54.0541191+02:00","level":"INFO","msg":"sender: closed","stream_id":"xdsriqwm"}
+{"time":"2025-01-11T17:16:54.0542513+02:00","level":"INFO","msg":"stream: closed","id":"xdsriqwm"}

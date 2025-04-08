@@ -1,0 +1,14 @@
+cuda:0
+  0%|          | 0/20327 [00:00<?, ?it/s]C:\Users\alonl\PycharmProjects\GI_Machine_Learning_Project_BIU\preposcessing_wrist2.py:48: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  new_data = pd.concat([new_data, pd.DataFrame([[folder_path + "measurements/"
+100%|██████████| 20327/20327 [08:16<00:00, 40.92it/s]
+32_64.csv
+100%|██████████| 1016/1016 [03:10<00:00,  5.33it/s]
+Epoch: 1 	Training Loss: 0.039783 	Accuracy: 67.058317
+100%|██████████| 1016/1016 [02:06<00:00,  8.04it/s]
+Epoch: 2 	Training Loss: 0.039637 	Accuracy: 67.107530
+100%|██████████| 1016/1016 [01:54<00:00,  8.89it/s]
+Epoch: 3 	Training Loss: 0.039625 	Accuracy: 67.107530
+100%|██████████| 1016/1016 [01:52<00:00,  9.06it/s]
+Epoch: 4 	Training Loss: 0.039599 	Accuracy: 67.107530
+ 54%|█████▎    | 544/1016 [01:00<00:52,  9.01it/s]

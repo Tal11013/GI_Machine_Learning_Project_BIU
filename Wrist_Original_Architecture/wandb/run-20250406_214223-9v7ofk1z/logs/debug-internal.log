@@ -1,0 +1,7 @@
+{"time":"2025-04-06T21:42:23.4959626+03:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"C:\\Users\\alonl\\PycharmProjects\\GI_Machine_Learning_Project_BIU\\Wrist_Original_Architecture\\wandb\\run-20250406_214223-9v7ofk1z\\logs\\debug-core.log"}
+{"time":"2025-04-06T21:42:23.6077448+03:00","level":"INFO","msg":"created new stream","id":"9v7ofk1z"}
+{"time":"2025-04-06T21:42:23.6077448+03:00","level":"INFO","msg":"stream: started","id":"9v7ofk1z"}
+{"time":"2025-04-06T21:42:23.6077448+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"9v7ofk1z"}
+{"time":"2025-04-06T21:42:23.6077448+03:00","level":"INFO","msg":"sender: started","stream_id":"9v7ofk1z"}
+{"time":"2025-04-06T21:42:23.6077448+03:00","level":"INFO","msg":"handler: started","stream_id":"9v7ofk1z"}
+{"time":"2025-04-06T21:42:24.1140755+03:00","level":"INFO","msg":"Starting system monitor"}

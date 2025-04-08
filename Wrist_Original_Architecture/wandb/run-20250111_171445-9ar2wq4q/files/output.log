@@ -1,0 +1,4 @@
+cuda:0
+32_64.csv
+  0%|          | 0/1016 [00:00<?, ?it/s]
+Problem in reshaping before convolutional layers: shape '[16, 1, 128, 128]' is invalid for input of size 131072

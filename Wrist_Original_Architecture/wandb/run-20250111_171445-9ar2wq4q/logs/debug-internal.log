@@ -1,0 +1,9 @@
+{"time":"2025-01-11T17:14:45.6527397+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"C:\\Users\\alonl\\PycharmProjects\\GI_Machine_Learning_Project_BIU\\Wrist_Original_Architecture\\wandb\\run-20250111_171445-9ar2wq4q\\logs\\debug-core.log"}
+{"time":"2025-01-11T17:14:45.7639524+02:00","level":"INFO","msg":"created new stream","id":"9ar2wq4q"}
+{"time":"2025-01-11T17:14:45.7639524+02:00","level":"INFO","msg":"stream: started","id":"9ar2wq4q"}
+{"time":"2025-01-11T17:14:45.7639524+02:00","level":"INFO","msg":"sender: started","stream_id":"9ar2wq4q"}
+{"time":"2025-01-11T17:14:45.7639524+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"9ar2wq4q"}
+{"time":"2025-01-11T17:14:45.7639524+02:00","level":"INFO","msg":"handler: started","stream_id":"9ar2wq4q"}
+{"time":"2025-01-11T17:14:46.0131487+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-11T17:14:46.8945103+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-11T17:14:46.8968502+02:00","level":"INFO","msg":"Stopped system monitor"}
