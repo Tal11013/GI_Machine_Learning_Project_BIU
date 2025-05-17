@@ -4,6 +4,7 @@ import torch
 import cv2
 import numpy as np
 
+'''
 def debug_visualize_opencv(image_tensor):
     """
     Uses OpenCV to visualize a single image. Accepts either PyTorch tensor or NumPy array.
@@ -19,7 +20,7 @@ def debug_visualize_opencv(image_tensor):
     cv2.imshow('Debug Visualization', image_tensor)
     cv2.waitKey(0)  # Wait for a key press to close
     cv2.destroyAllWindows()
-
+'''
 
 # This is our custom dataset class
 class GI_Wrist(Dataset):
@@ -40,7 +41,7 @@ class GI_Wrist(Dataset):
         # transform the measurements if needed
         if self.transform:
             measurements = self.transform(measurements)
-        debug_visualize_opencv(measurements)
+        # debug_visualize_opencv(measurements)
         # measurements = measurements.repeat(3, 1, 1)
         # read the label at the given index and convert it to a tensor
         if self.data['label'][index] == 1:

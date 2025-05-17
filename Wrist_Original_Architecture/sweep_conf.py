@@ -18,11 +18,11 @@ sweep_configuration = {
     'metric': {'goal': 'maximize', 'name': 'Test accuracy'},
     'parameters':
         {
-            'lr': {'values': [0.0002]},
-            'epoch': {'values': [10]},
+            'lr': {'values': [0.002,0.0002]},
+            'epoch': {'values': [10,30,50]},
             'shape': {'values': ["32_64"]},
-            'batch_size': {'values': [16]},
-            'sampling_rate': {'values': [0.2, 0.5, 0.75]}
+            'batch_size': {'values': [8]},
+            'sampling_rate': {'values': [0.2, 0.3, 0.4]}
         }
 }
 
