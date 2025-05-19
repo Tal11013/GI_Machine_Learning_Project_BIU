@@ -1,0 +1,7 @@
+{"time":"2025-05-17T15:21:05.6804724+03:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"C:\\Users\\alonl\\PycharmProjects\\GI_Machine_Learning_Project_BIU\\Wrist_Original_Architecture\\wandb\\run-20250517_152105-magypazy\\logs\\debug-core.log"}
+{"time":"2025-05-17T15:21:05.7985429+03:00","level":"INFO","msg":"created new stream","id":"magypazy"}
+{"time":"2025-05-17T15:21:05.7985429+03:00","level":"INFO","msg":"stream: started","id":"magypazy"}
+{"time":"2025-05-17T15:21:05.7985429+03:00","level":"INFO","msg":"handler: started","stream_id":"magypazy"}
+{"time":"2025-05-17T15:21:05.7985429+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"magypazy"}
+{"time":"2025-05-17T15:21:05.7985429+03:00","level":"INFO","msg":"sender: started","stream_id":"magypazy"}
+{"time":"2025-05-17T15:21:06.1766692+03:00","level":"INFO","msg":"Starting system monitor"}

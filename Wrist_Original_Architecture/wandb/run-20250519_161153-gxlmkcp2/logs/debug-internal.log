@@ -1,0 +1,6 @@
+{"time":"2025-05-19T16:12:12.8390295+03:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"C:\\Users\\alonl\\PycharmProjects\\GI_Machine_Learning_Project_BIU\\Wrist_Original_Architecture\\wandb\\run-20250519_161153-gxlmkcp2\\logs\\debug-core.log"}
+{"time":"2025-05-19T16:16:30.1386189+03:00","level":"INFO","msg":"created new stream","id":"gxlmkcp2"}
+{"time":"2025-05-19T16:16:30.1396098+03:00","level":"INFO","msg":"stream: started","id":"gxlmkcp2"}
+{"time":"2025-05-19T16:16:30.1396098+03:00","level":"INFO","msg":"sender: started","stream_id":"gxlmkcp2"}
+{"time":"2025-05-19T16:16:30.1396098+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"gxlmkcp2"}
+{"time":"2025-05-19T16:16:30.1396098+03:00","level":"INFO","msg":"handler: started","stream_id":"gxlmkcp2"}

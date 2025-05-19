@@ -1,0 +1,25 @@
+cuda:0
+C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\cuda\memory.py:365: FutureWarning: torch.cuda.reset_max_memory_allocated now calls torch.cuda.reset_peak_memory_stats, which resets /all/ peak memory stats.
+  warnings.warn(
+C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\cuda\memory.py:391: FutureWarning: torch.cuda.reset_max_memory_cached now calls torch.cuda.reset_peak_memory_stats, which resets /all/ peak memory stats.
+  warnings.warn(
+32_64.csv
+100%|██████████| 1016/1016 [01:05<00:00, 15.61it/s]
+Epoch: 1 	Training Loss: 0.040103 	Accuracy: 66.609252
+100%|██████████| 1016/1016 [01:05<00:00, 15.58it/s]
+Epoch: 2 	Training Loss: 0.036014 	Accuracy: 70.718504
+100%|██████████| 1016/1016 [01:05<00:00, 15.58it/s]
+Epoch: 3 	Training Loss: 0.034280 	Accuracy: 74.489419
+100%|██████████| 1016/1016 [01:05<00:00, 15.45it/s]
+Epoch: 4 	Training Loss: 0.033699 	Accuracy: 75.695128
+100%|██████████| 1016/1016 [01:05<00:00, 15.41it/s]
+Epoch: 5 	Training Loss: 0.032995 	Accuracy: 76.808563
+100%|██████████| 1016/1016 [01:04<00:00, 15.71it/s]
+Epoch: 6 	Training Loss: 0.032745 	Accuracy: 77.614419
+100%|██████████| 1016/1016 [01:04<00:00, 15.71it/s]
+Epoch: 7 	Training Loss: 0.032567 	Accuracy: 77.823573
+100%|██████████| 1016/1016 [01:04<00:00, 15.69it/s]
+Epoch: 8 	Training Loss: 0.032339 	Accuracy: 78.260335
+100%|██████████| 1016/1016 [01:05<00:00, 15.55it/s]
+Epoch: 9 	Training Loss: 0.033229 	Accuracy: 76.845472
+ 72%|███████▏  | 736/1016 [00:49<00:18, 15.26it/s]

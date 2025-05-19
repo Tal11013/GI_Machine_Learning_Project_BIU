@@ -23,7 +23,6 @@ torch.cuda.reset_max_memory_cached()
 gc.collect()
 
 
-
 Processed_Datasets_Tal = ("C:\\Users\\iker1\\OneDrive\\מסמכים\\"
                            "GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\")
 

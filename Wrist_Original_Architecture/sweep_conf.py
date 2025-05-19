@@ -22,7 +22,7 @@ sweep_configuration = {
             'epoch': {'values': [10,30,50]},
             'shape': {'values': ["32_64"]},
             'batch_size': {'values': [16]},
-            'sampling_rate': {'values': [0.2, 0.3, 0.4]}
+            'sampling_rate': {'values': [0.5]}
         }
 }
 

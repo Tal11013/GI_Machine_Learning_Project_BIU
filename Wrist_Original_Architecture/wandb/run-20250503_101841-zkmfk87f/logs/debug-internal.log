@@ -1,0 +1,16 @@
+{"time":"2025-05-03T10:18:42.5676221+03:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"C:\\Users\\alonl\\PycharmProjects\\GI_Machine_Learning_Project_BIU\\Wrist_Original_Architecture\\wandb\\run-20250503_101841-zkmfk87f\\logs\\debug-core.log"}
+{"time":"2025-05-03T10:18:42.8852899+03:00","level":"INFO","msg":"created new stream","id":"zkmfk87f"}
+{"time":"2025-05-03T10:18:42.8858039+03:00","level":"INFO","msg":"stream: started","id":"zkmfk87f"}
+{"time":"2025-05-03T10:18:42.8852899+03:00","level":"INFO","msg":"handler: started","stream_id":"zkmfk87f"}
+{"time":"2025-05-03T10:18:42.8858039+03:00","level":"INFO","msg":"sender: started","stream_id":"zkmfk87f"}
+{"time":"2025-05-03T10:18:42.8858039+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"zkmfk87f"}
+{"time":"2025-05-03T10:18:43.2162145+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-03T10:19:13.9996259+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-03T10:19:14.0501441+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-03T10:19:15.0793206+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.5856116,"progress":"70B/70B"},{"desc":"uploading config.yaml","runtime_seconds":0.3295352,"progress":"649B/649B"}],"total_operations":2}}
+{"time":"2025-05-03T10:19:15.5263474+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-03T10:19:18.45412+03:00","level":"INFO","msg":"stream: closing","id":"zkmfk87f"}
+{"time":"2025-05-03T10:19:18.45412+03:00","level":"INFO","msg":"handler: closed","stream_id":"zkmfk87f"}
+{"time":"2025-05-03T10:19:18.45412+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"zkmfk87f"}
+{"time":"2025-05-03T10:19:18.4546386+03:00","level":"INFO","msg":"sender: closed","stream_id":"zkmfk87f"}
+{"time":"2025-05-03T10:19:18.4551559+03:00","level":"INFO","msg":"stream: closed","id":"zkmfk87f"}

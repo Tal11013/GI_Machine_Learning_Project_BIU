@@ -1,0 +1,70 @@
+cuda:0
+C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\cuda\memory.py:365: FutureWarning: torch.cuda.reset_max_memory_allocated now calls torch.cuda.reset_peak_memory_stats, which resets /all/ peak memory stats.
+  warnings.warn(
+C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\cuda\memory.py:391: FutureWarning: torch.cuda.reset_max_memory_cached now calls torch.cuda.reset_peak_memory_stats, which resets /all/ peak memory stats.
+  warnings.warn(
+32_64.csv
+100%|██████████| 1016/1016 [02:20<00:00,  7.21it/s]
+Epoch: 1 	Training Loss: 0.040163 	Accuracy: 66.646161
+100%|██████████| 1016/1016 [02:10<00:00,  7.76it/s]
+Epoch: 2 	Training Loss: 0.039281 	Accuracy: 66.879921
+100%|██████████| 1016/1016 [02:13<00:00,  7.62it/s]
+Epoch: 3 	Training Loss: 0.038392 	Accuracy: 66.892224
+100%|██████████| 1016/1016 [02:16<00:00,  7.47it/s]
+Epoch: 4 	Training Loss: 0.037600 	Accuracy: 67.679626
+100%|██████████| 1016/1016 [02:10<00:00,  7.78it/s]
+Epoch: 5 	Training Loss: 0.037577 	Accuracy: 68.325541
+100%|██████████| 1016/1016 [02:10<00:00,  7.76it/s]
+Epoch: 6 	Training Loss: 0.037279 	Accuracy: 68.897638
+100%|██████████| 1016/1016 [02:10<00:00,  7.78it/s]
+Epoch: 7 	Training Loss: 0.036966 	Accuracy: 68.909941
+100%|██████████| 1016/1016 [02:12<00:00,  7.65it/s]
+Epoch: 8 	Training Loss: 0.036813 	Accuracy: 70.047982
+100%|██████████| 1016/1016 [02:13<00:00,  7.60it/s]
+Epoch: 9 	Training Loss: 0.037278 	Accuracy: 69.580463
+100%|██████████| 1016/1016 [02:13<00:00,  7.60it/s]
+Epoch: 10 	Training Loss: 0.036849 	Accuracy: 69.574311
+100%|██████████| 1016/1016 [02:13<00:00,  7.59it/s]
+Epoch: 11 	Training Loss: 0.036775 	Accuracy: 70.004921
+100%|██████████| 1016/1016 [02:11<00:00,  7.73it/s]
+Epoch: 12 	Training Loss: 0.036594 	Accuracy: 70.324803
+100%|██████████| 1016/1016 [02:13<00:00,  7.58it/s]
+Epoch: 13 	Training Loss: 0.036714 	Accuracy: 69.617372
+100%|██████████| 1016/1016 [02:12<00:00,  7.68it/s]
+Epoch: 14 	Training Loss: 0.036939 	Accuracy: 69.641978
+100%|██████████| 1016/1016 [02:30<00:00,  6.74it/s]
+Epoch: 15 	Training Loss: 0.036757 	Accuracy: 69.851132
+100%|██████████| 1016/1016 [02:47<00:00,  6.07it/s]
+Epoch: 16 	Training Loss: 0.036754 	Accuracy: 69.832677
+100%|██████████| 1016/1016 [04:44<00:00,  3.58it/s]
+Epoch: 17 	Training Loss: 0.036576 	Accuracy: 69.832677
+100%|██████████| 1016/1016 [02:54<00:00,  5.81it/s]
+Epoch: 18 	Training Loss: 0.036914 	Accuracy: 69.592766
+100%|██████████| 1016/1016 [02:21<00:00,  7.20it/s]
+Epoch: 19 	Training Loss: 0.036435 	Accuracy: 70.287894
+100%|██████████| 1016/1016 [02:19<00:00,  7.29it/s]
+Epoch: 20 	Training Loss: 0.036481 	Accuracy: 70.072589
+100%|██████████| 1016/1016 [02:25<00:00,  6.96it/s]
+Epoch: 21 	Training Loss: 0.037000 	Accuracy: 70.041831
+100%|██████████| 1016/1016 [02:21<00:00,  7.19it/s]
+Epoch: 22 	Training Loss: 0.036571 	Accuracy: 69.968012
+100%|██████████| 1016/1016 [02:34<00:00,  6.59it/s]
+Epoch: 23 	Training Loss: 0.036511 	Accuracy: 70.072589
+100%|██████████| 1016/1016 [02:21<00:00,  7.17it/s]
+Epoch: 24 	Training Loss: 0.036435 	Accuracy: 70.275591
+100%|██████████| 1016/1016 [02:19<00:00,  7.26it/s]
+Epoch: 25 	Training Loss: 0.036440 	Accuracy: 70.195620
+100%|██████████| 1016/1016 [02:16<00:00,  7.44it/s]
+Epoch: 26 	Training Loss: 0.036524 	Accuracy: 70.497047
+100%|██████████| 1016/1016 [02:19<00:00,  7.28it/s]
+Epoch: 27 	Training Loss: 0.036304 	Accuracy: 70.829232
+100%|██████████| 1016/1016 [02:23<00:00,  7.08it/s]
+Epoch: 28 	Training Loss: 0.036428 	Accuracy: 70.490896
+100%|██████████| 1016/1016 [02:21<00:00,  7.19it/s]
+Epoch: 29 	Training Loss: 0.036354 	Accuracy: 70.472441
+100%|██████████| 1016/1016 [02:19<00:00,  7.27it/s]
+Epoch: 30 	Training Loss: 0.036313 	Accuracy: 70.472441
+
+Test set: Average loss: 0.0423, Accuracy: 2252/4064 (55.41%)
+
+55.41338582677165 0.04230392972139392

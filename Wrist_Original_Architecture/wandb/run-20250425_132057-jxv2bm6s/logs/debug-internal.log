@@ -1,0 +1,29 @@
+{"time":"2025-04-25T13:20:58.0943438+03:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"C:\\Users\\alonl\\PycharmProjects\\GI_Machine_Learning_Project_BIU\\Wrist_Original_Architecture\\wandb\\run-20250425_132057-jxv2bm6s\\logs\\debug-core.log"}
+{"time":"2025-04-25T13:20:58.2081366+03:00","level":"INFO","msg":"created new stream","id":"jxv2bm6s"}
+{"time":"2025-04-25T13:20:58.2081366+03:00","level":"INFO","msg":"stream: started","id":"jxv2bm6s"}
+{"time":"2025-04-25T13:20:58.2081366+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"jxv2bm6s"}
+{"time":"2025-04-25T13:20:58.2081366+03:00","level":"INFO","msg":"sender: started","stream_id":"jxv2bm6s"}
+{"time":"2025-04-25T13:20:58.2081366+03:00","level":"INFO","msg":"handler: started","stream_id":"jxv2bm6s"}
+{"time":"2025-04-25T13:20:58.6564172+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-25T15:21:44.4498827+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/barilan/GI_Machine_Learning_Project/jxv2bm6s/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-04-25T15:21:47.6778801+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/barilan/GI_Machine_Learning_Project/jxv2bm6s/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-04-25T15:21:52.4806311+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/barilan/GI_Machine_Learning_Project/jxv2bm6s/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-04-25T15:22:03.9922302+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/barilan/GI_Machine_Learning_Project/jxv2bm6s/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-04-25T15:22:07.8746977+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.1.163:52718->35.186.228.49:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-04-25T15:22:13.2162678+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-04-25T15:22:18.4279279+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-04-25T15:22:24.1342349+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/barilan/GI_Machine_Learning_Project/jxv2bm6s/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-04-25T15:22:26.7936522+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-04-25T15:41:27.4525668+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/barilan/GI_Machine_Learning_Project/jxv2bm6s/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-04-25T15:41:27.5615653+03:00","level":"WARN","msg":"sender: taking a long time","seconds":1179.0075778,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true mailbox_slot:\"rke5dxog4347\" connection_id:\"127.0.0.1:51894\")"}
+{"time":"2025-04-25T15:41:27.6825886+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-04-25T15:42:07.3561494+03:00","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":1219.4045209,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true mailbox_slot:\"rke5dxog4347\" connection_id:\"127.0.0.1:51894\")"}
+{"time":"2025-04-25T17:15:46.5003108+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-25T17:15:46.5080345+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-25T17:15:47.4825538+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-25T17:15:47.5131202+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 23-24","runtime_seconds":0.0298024}],"total_operations":1}}
+{"time":"2025-04-25T17:15:48.9048857+03:00","level":"INFO","msg":"stream: closing","id":"jxv2bm6s"}
+{"time":"2025-04-25T17:15:48.9048857+03:00","level":"INFO","msg":"handler: closed","stream_id":"jxv2bm6s"}
+{"time":"2025-04-25T17:15:48.9048857+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"jxv2bm6s"}
+{"time":"2025-04-25T17:15:48.9053991+03:00","level":"INFO","msg":"sender: closed","stream_id":"jxv2bm6s"}
+{"time":"2025-04-25T17:15:48.9053991+03:00","level":"INFO","msg":"stream: closed","id":"jxv2bm6s"}

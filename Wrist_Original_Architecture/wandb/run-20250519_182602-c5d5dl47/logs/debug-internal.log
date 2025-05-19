@@ -1,0 +1,16 @@
+{"time":"2025-05-19T18:26:03.9912149+03:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"C:\\Users\\alonl\\PycharmProjects\\GI_Machine_Learning_Project_BIU\\Wrist_Original_Architecture\\wandb\\run-20250519_182602-c5d5dl47\\logs\\debug-core.log"}
+{"time":"2025-05-19T18:26:04.4776948+03:00","level":"INFO","msg":"created new stream","id":"c5d5dl47"}
+{"time":"2025-05-19T18:26:04.478291+03:00","level":"INFO","msg":"stream: started","id":"c5d5dl47"}
+{"time":"2025-05-19T18:26:04.478291+03:00","level":"INFO","msg":"handler: started","stream_id":"c5d5dl47"}
+{"time":"2025-05-19T18:26:04.478291+03:00","level":"INFO","msg":"sender: started","stream_id":"c5d5dl47"}
+{"time":"2025-05-19T18:26:04.478291+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"c5d5dl47"}
+{"time":"2025-05-19T18:26:06.5234507+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T18:43:18.3193113+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T18:43:18.4275804+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T18:43:19.3249704+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.3509998}],"total_operations":1}}
+{"time":"2025-05-19T18:43:20.6414301+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T18:43:24.5744725+03:00","level":"INFO","msg":"stream: closing","id":"c5d5dl47"}
+{"time":"2025-05-19T18:43:24.5745426+03:00","level":"INFO","msg":"handler: closed","stream_id":"c5d5dl47"}
+{"time":"2025-05-19T18:43:24.5745426+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"c5d5dl47"}
+{"time":"2025-05-19T18:43:24.5746206+03:00","level":"INFO","msg":"sender: closed","stream_id":"c5d5dl47"}
+{"time":"2025-05-19T18:43:24.5751732+03:00","level":"INFO","msg":"stream: closed","id":"c5d5dl47"}

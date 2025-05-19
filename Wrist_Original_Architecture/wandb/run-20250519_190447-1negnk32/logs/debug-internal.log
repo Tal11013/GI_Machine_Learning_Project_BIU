@@ -1,0 +1,16 @@
+{"time":"2025-05-19T19:04:48.1277409+03:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"C:\\Users\\alonl\\PycharmProjects\\GI_Machine_Learning_Project_BIU\\Wrist_Original_Architecture\\wandb\\run-20250519_190447-1negnk32\\logs\\debug-core.log"}
+{"time":"2025-05-19T19:04:48.894268+03:00","level":"INFO","msg":"created new stream","id":"1negnk32"}
+{"time":"2025-05-19T19:04:48.894268+03:00","level":"INFO","msg":"stream: started","id":"1negnk32"}
+{"time":"2025-05-19T19:04:48.894268+03:00","level":"INFO","msg":"sender: started","stream_id":"1negnk32"}
+{"time":"2025-05-19T19:04:48.894268+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"1negnk32"}
+{"time":"2025-05-19T19:04:48.894268+03:00","level":"INFO","msg":"handler: started","stream_id":"1negnk32"}
+{"time":"2025-05-19T19:04:49.1598349+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T19:29:16.5869932+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T19:29:16.5875481+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T19:29:17.5896604+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.3542698,"progress":"730B/730B"}],"total_operations":1}}
+{"time":"2025-05-19T19:29:18.0012851+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T19:29:19.343205+03:00","level":"INFO","msg":"stream: closing","id":"1negnk32"}
+{"time":"2025-05-19T19:29:19.343205+03:00","level":"INFO","msg":"handler: closed","stream_id":"1negnk32"}
+{"time":"2025-05-19T19:29:19.343205+03:00","level":"INFO","msg":"sender: closed","stream_id":"1negnk32"}
+{"time":"2025-05-19T19:29:19.343205+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"1negnk32"}
+{"time":"2025-05-19T19:29:19.3437308+03:00","level":"INFO","msg":"stream: closed","id":"1negnk32"}

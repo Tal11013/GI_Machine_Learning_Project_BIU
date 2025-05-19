@@ -1,0 +1,112 @@
+2025-05-19 16:11:09,750 INFO    Thread-16 (_run_job):29032 [wandb_setup.py:_flush():68] Current SDK version is 0.19.2
+2025-05-19 16:11:09,751 INFO    Thread-16 (_run_job):29032 [wandb_setup.py:_flush():68] Configure stats pid to 29032
+2025-05-19 16:11:09,751 INFO    Thread-16 (_run_job):29032 [wandb_setup.py:_flush():68] Loading settings from C:\Users\alonl\.config\wandb\settings
+2025-05-19 16:11:09,751 INFO    Thread-16 (_run_job):29032 [wandb_setup.py:_flush():68] Loading settings from C:\Users\alonl\PycharmProjects\GI_Machine_Learning_Project_BIU\Wrist_Original_Architecture\wandb\settings
+2025-05-19 16:11:09,751 INFO    Thread-16 (_run_job):29032 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-05-19 16:11:09,752 INFO    Thread-16 (_run_job):29032 [wandb_init.py:_log_setup():523] Logging user logs to C:\Users\alonl\PycharmProjects\GI_Machine_Learning_Project_BIU\Wrist_Original_Architecture\wandb\run-20250519_161106-y8da6zgc\logs\debug.log
+2025-05-19 16:11:09,752 INFO    Thread-16 (_run_job):29032 [wandb_init.py:_log_setup():524] Logging internal logs to C:\Users\alonl\PycharmProjects\GI_Machine_Learning_Project_BIU\Wrist_Original_Architecture\wandb\run-20250519_161106-y8da6zgc\logs\debug-internal.log
+2025-05-19 16:11:09,752 INFO    Thread-16 (_run_job):29032 [wandb_init.py:init():641] calling init triggers
+2025-05-19 16:11:09,752 INFO    Thread-16 (_run_job):29032 [wandb_init.py:init():647] wandb.init called with sweep_config: {'batch_size': 16, 'epoch': 30, 'lr': 0.0002, 'sampling_rate': 0.8, 'shape': '32_64'}
+config: {}
+2025-05-19 16:11:09,752 INFO    Thread-16 (_run_job):29032 [wandb_init.py:init():674] starting backend
+2025-05-19 16:11:20,374 ERROR   Thread-16 (_run_job):29032 [wandb_init.py:init():1299] error in wandb.init()
+Traceback (most recent call last):
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\service\service.py", line 109, in _wait_for_ports
+    pf.read(fname)
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\service\port_file.py", line 38, in read
+    with open(fname) as f:
+         ^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\alonl\\AppData\\Local\\Temp\\tmpc42qjuhx\\port-29032.txt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\wandb_init.py", line 1289, in init
+    return wi.init()
+           ^^^^^^^^^
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\wandb_init.py", line 677, in init
+    service = self._wl.ensure_service()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\wandb_setup.py", line 280, in ensure_service
+    self._connection = service_connection.connect_to_service(self._settings)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\lib\service_connection.py", line 40, in connect_to_service
+    return _start_and_connect_service(settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\lib\service_connection.py", line 75, in _start_and_connect_service
+    proc.start()
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\service\service.py", line 232, in start
+    self._launch_server()
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\service\service.py", line 226, in _launch_server
+    _sentry.reraise(e)
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\analytics\sentry.py", line 156, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\service\service.py", line 224, in _launch_server
+    self._wait_for_ports(fname, proc=internal_proc)
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\service\service.py", line 117, in _wait_for_ports
+    raise ServiceStartPortError(
+wandb.sdk.service.service.ServiceStartPortError: Failed to allocate port for wandb service: [Errno 13] Permission denied: 'C:\\Users\\alonl\\AppData\\Local\\Temp\\tmpc42qjuhx\\port-29032.txt'.
+2025-05-19 16:11:39,651 ERROR   MainThread:29032 [pyagent.py:_run_jobs_from_queue():234] Run y8da6zgc errored:
+Traceback (most recent call last):
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\service\service.py", line 109, in _wait_for_ports
+    pf.read(fname)
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\service\port_file.py", line 38, in read
+    with open(fname) as f:
+         ^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\alonl\\AppData\\Local\\Temp\\tmpc42qjuhx\\port-29032.txt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\agents\pyagent.py", line 306, in _run_job
+    self._function()
+  File "C:\Users\alonl\PycharmProjects\GI_Machine_Learning_Project_BIU\Wrist_Original_Architecture\sweep_conf.py", line 9, in main
+    wandb.init()
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\wandb_init.py", line 1303, in init
+    wandb._sentry.reraise(e)
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\analytics\sentry.py", line 156, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\wandb_init.py", line 1289, in init
+    return wi.init()
+           ^^^^^^^^^
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\wandb_init.py", line 677, in init
+    service = self._wl.ensure_service()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\wandb_setup.py", line 280, in ensure_service
+    self._connection = service_connection.connect_to_service(self._settings)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\lib\service_connection.py", line 40, in connect_to_service
+    return _start_and_connect_service(settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\lib\service_connection.py", line 75, in _start_and_connect_service
+    proc.start()
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\service\service.py", line 232, in start
+    self._launch_server()
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\service\service.py", line 226, in _launch_server
+    _sentry.reraise(e)
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\analytics\sentry.py", line 156, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\service\service.py", line 224, in _launch_server
+    self._wait_for_ports(fname, proc=internal_proc)
+  File "C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\service\service.py", line 117, in _wait_for_ports
+    raise ServiceStartPortError(
+wandb.sdk.service.service.ServiceStartPortError: Failed to allocate port for wandb service: [Errno 13] Permission denied: 'C:\\Users\\alonl\\AppData\\Local\\Temp\\tmpc42qjuhx\\port-29032.txt'.
+
+2025-05-19 16:11:54,193 INFO    Thread-20 (_run_job):29032 [wandb_setup.py:_flush():68] Current SDK version is 0.19.2
+2025-05-19 16:11:54,194 INFO    Thread-20 (_run_job):29032 [wandb_setup.py:_flush():68] Configure stats pid to 29032
+2025-05-19 16:11:54,195 INFO    Thread-20 (_run_job):29032 [wandb_setup.py:_flush():68] Loading settings from C:\Users\alonl\.config\wandb\settings
+2025-05-19 16:11:54,195 INFO    Thread-20 (_run_job):29032 [wandb_setup.py:_flush():68] Loading settings from C:\Users\alonl\PycharmProjects\GI_Machine_Learning_Project_BIU\Wrist_Original_Architecture\wandb\settings
+2025-05-19 16:11:54,195 INFO    Thread-20 (_run_job):29032 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-05-19 16:11:54,197 INFO    Thread-20 (_run_job):29032 [wandb_init.py:_log_setup():523] Logging user logs to C:\Users\alonl\PycharmProjects\GI_Machine_Learning_Project_BIU\Wrist_Original_Architecture\wandb\run-20250519_161153-gxlmkcp2\logs\debug.log
+2025-05-19 16:11:54,198 INFO    Thread-20 (_run_job):29032 [wandb_init.py:_log_setup():524] Logging internal logs to C:\Users\alonl\PycharmProjects\GI_Machine_Learning_Project_BIU\Wrist_Original_Architecture\wandb\run-20250519_161153-gxlmkcp2\logs\debug-internal.log
+2025-05-19 16:11:54,198 INFO    Thread-20 (_run_job):29032 [wandb_init.py:init():641] calling init triggers
+2025-05-19 16:11:54,198 INFO    Thread-20 (_run_job):29032 [wandb_init.py:init():647] wandb.init called with sweep_config: {'batch_size': 16, 'epoch': 50, 'lr': 0.0002, 'sampling_rate': 0.8, 'shape': '32_64'}
+config: {}
+2025-05-19 16:11:54,199 INFO    Thread-20 (_run_job):29032 [wandb_init.py:init():674] starting backend
+2025-05-19 16:12:11,501 INFO    Thread-20 (_run_job):29032 [wandb_init.py:init():678] sending inform_init request
+2025-05-19 16:12:13,305 INFO    Thread-20 (_run_job):29032 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=spawn, using: spawn
+2025-05-19 16:12:13,381 INFO    Thread-20 (_run_job):29032 [wandb_init.py:init():693] backend started and connected
+2025-05-19 16:12:15,094 INFO    Thread-20 (_run_job):29032 [wandb_run.py:_config_callback():1283] config_cb None None {'batch_size': 16, 'epoch': 50, 'lr': 0.0002, 'sampling_rate': 0.8, 'shape': '32_64'}
+2025-05-19 16:12:23,781 INFO    Thread-20 (_run_job):29032 [wandb_init.py:init():786] updated telemetry
+2025-05-19 16:13:19,297 INFO    Thread-20 (_run_job):29032 [wandb_init.py:init():818] communicating run to backend with 90.0 second timeout
+2025-05-19 16:14:51,081 ERROR   Thread-20 (_run_job):29032 [wandb_init.py:init():845] encountered error: Run initialization has timed out after 90.0 sec. Please try increasing the timeout with the `init_timeout` setting: `wandb.init(settings=wandb.Settings(init_timeout=120))`.
