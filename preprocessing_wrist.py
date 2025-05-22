@@ -6,6 +6,8 @@ import os
 from tqdm import tqdm
 import traceback
 
+from consts import *
+
 
 def generate_data(folder_path, sampling_rate, shape=(64, 128)):
     # create reference_matrix - a random matrix in the shape of number of measurments (photos) and the pixels each photo
@@ -13,7 +15,7 @@ def generate_data(folder_path, sampling_rate, shape=(64, 128)):
     num_of_measurement = int(round(sampling_rate * shape[0] * shape[1]))
     reference_matrix = np.random.randn(num_of_measurement, shape[0] * shape[1])
     # read the csv file given as an input to the function
-    data = pd.read_csv(folder_path + "dataset.csv")
+    data = pd.read_csv(folder_path + DATASET_PATH)
     # create a new csv file for later use
     new_data = pd.DataFrame(columns=['path', 'label'])
     # iterate on the rows of the  data (given CSV file in the function)
@@ -21,10 +23,10 @@ def generate_data(folder_path, sampling_rate, shape=(64, 128)):
         torch.cuda.empty_cache()
         # get the image path from the csv file - .iloc[i,0] is used to access the value of row i and column 0 in the
         # data file (column 0 in the data gives the image path)
-        image_path = "C:\\Users\\alonl\\Downloads\\Xray_images\\"
+        image_path = XRAY_IMAGES_PATH
         image_path += data.iloc[i, 0]
         # read the png image from the path
-        image_path += ".png"
+        image_path += PNG_ENDING
         img = Image.open(image_path)
         # resize the image to shape (input) and resamples the pixels in a Bilinear way (the color weight given to the
         # pixel is calculated using the 4 nearest pixels
@@ -54,18 +56,18 @@ def generate_data(folder_path, sampling_rate, shape=(64, 128)):
 
         # save the measurements to csv file
         pd.DataFrame(measurements).to_csv(folder_path + "measurements/"+str(num_of_measurement) + "_"+str(shape[0]) +
-                                              "_" + str(shape[1]) + "/" + str(i) + ".csv", index=False)
+                                              "_" + str(shape[1]) + "/" + str(i) + CSV_ENDING, index=False)
         # save the path and the label to the new general csv file ("new_data")
         try:
             new_data = pd.concat([new_data, pd.DataFrame([[folder_path + "measurements/"+str(num_of_measurement) + "_"
-                                                           + str(shape[0]) + "_" + str(shape[1]) + "/" + str(i) + ".csv",
-                                                           data['fracture_visible'].iloc[i]]], columns=['path', 'label'])])
-        except Exception as a:
-            print(f"error: {type(a).__name__} - {a}")
+                                                           + str(shape[0]) + "_" + str(shape[1]) + "/" + str(i) + CSV_ENDING,
+                                                           data[FRACTURE_VISIBLE_LABEL].iloc[i]]], columns=['path', 'label'])])
+        except Exception as e:
+            print(f"error: {e}")
             traceback.print_exc()
         # save the new general csv file
         try:
             new_data.to_csv(folder_path + "new_dataset_" + str(num_of_measurement) + "_" + str(shape[0]) + "_"+str(shape[1])
-                        + ".csv", index=False)
-        except Exception as b:
-            print(f"error1f: {type(b).__name__} - {b}")
+                        + CSV_ENDING, index=False)
+        except Exception as e:
+            print(f"error: {e}")

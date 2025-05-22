@@ -64,8 +64,8 @@ def main_wrist(config):
 
         # generate the data ### use this line only if you want to generate the data and transform the photos
         # to GI images BEFORE putting it into the net.
-        # preposcessing_wrist2.generate_data2(ALON_PROCESSED_DATASETS_PATH, shape_tuple)
-        preprocessing_wrist.generate_data(ALON_PROCESSED_DATASETS_PATH, sampling_rate, shape_tuple)
+        preposcessing_wrist2.generate_data2(ALON_PROCESSED_DATASETS_PATH, shape_tuple)
+        # preprocessing_wrist.generate_data(ALON_PROCESSED_DATASETS_PATH, sampling_rate, shape_tuple)
 
         # preposcessing_wrist2.generate_data2("/content/drive/MyDrive/Processed_Datasets/", shape_tuple)
         # preprocessing_wrist.generate_data("/content/drive/MyDrive/Processed_Datasets/", shape_tuple)
@@ -101,8 +101,8 @@ def main_wrist(config):
         # create the network and choose if you want the GI imaging to happen before the entering to the net
         # or during the net - choose only one.
 
-        model = ConvolutionalNet(batch_size, (IMAGE_SIZE, IMAGE_SIZE)).to(device)
-        # model = ConvolutionalNetDiff(batch_size, (IMAGE_SIZE, IMAGE_SIZE), sampling_rate).to(device)
+        # model = ConvolutionalNet(batch_size, (IMAGE_SIZE, IMAGE_SIZE)).to(device)
+        model = ConvolutionalNetDiff(batch_size, (IMAGE_SIZE, IMAGE_SIZE), sampling_rate).to(device)
 
 
         # choose a loss function

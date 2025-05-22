@@ -3,4 +3,38 @@ cuda:0
   new_data = pd.concat([new_data, pd.DataFrame([[folder_path + "measurements/"+str(num_of_measurement) + "_"
 100%|██████████| 20327/20327 [32:02<00:00, 10.58it/s]
 64_128.csv
- 49%|████▊     | 493/1016 [02:05<02:26,  3.57it/s]
+100%|██████████| 1016/1016 [04:16<00:00,  3.96it/s]
+Epoch: 1 	Training Loss: 0.039490 	Accuracy: 67.29%
+P:0.622  R:0.517  F1:0.449  AUROC:0.537  AUPRC:0.686
+100%|██████████| 1016/1016 [01:20<00:00, 12.64it/s]
+Epoch: 2 	Training Loss: 0.034990 	Accuracy: 73.47%
+P:0.699  R:0.683  F1:0.689  AUROC:0.777  AUPRC:0.871
+100%|██████████| 1016/1016 [01:19<00:00, 12.81it/s]
+Epoch: 3 	Training Loss: 0.035589 	Accuracy: 73.01%
+P:0.701  R:0.647  F1:0.656  AUROC:0.701  AUPRC:0.781
+100%|██████████| 1016/1016 [01:14<00:00, 13.70it/s]
+Epoch: 4 	Training Loss: 0.042720 	Accuracy: 37.58%
+P:0.499  R:0.499  F1:0.350  AUROC:0.614  AUPRC:0.742
+100%|██████████| 1016/1016 [01:12<00:00, 14.02it/s]
+Epoch: 5 	Training Loss: 0.043180 	Accuracy: 33.14%
+P:0.166  R:0.500  F1:0.249  AUROC:0.626  AUPRC:0.737
+100%|██████████| 1016/1016 [01:12<00:00, 14.01it/s]
+Epoch: 6 	Training Loss: 0.043209 	Accuracy: 33.14%
+P:0.166  R:0.500  F1:0.249  AUROC:0.599  AUPRC:0.720
+100%|██████████| 1016/1016 [01:12<00:00, 14.01it/s]
+Epoch: 7 	Training Loss: 0.043113 	Accuracy: 33.13%
+P:0.388  R:0.500  F1:0.249  AUROC:0.585  AUPRC:0.710
+100%|██████████| 1016/1016 [01:12<00:00, 14.02it/s]
+Epoch: 8 	Training Loss: 0.043264 	Accuracy: 33.14%
+P:0.166  R:0.500  F1:0.249  AUROC:0.599  AUPRC:0.723
+100%|██████████| 1016/1016 [01:12<00:00, 14.02it/s]
+Epoch: 9 	Training Loss: 0.043195 	Accuracy: 33.14%
+P:0.166  R:0.500  F1:0.249  AUROC:0.637  AUPRC:0.749
+100%|██████████| 1016/1016 [01:12<00:00, 14.01it/s]
+Epoch: 10 	Training Loss: 0.042997 	Accuracy: 33.14%
+P:0.166  R:0.500  F1:0.249  AUROC:0.666  AUPRC:0.766
+
+Test set: Average loss: 0.0436, Accuracy: 1386/4064 (34.10%)
+P:0.171  R:0.500  F1:0.254  AUROC:0.693  AUPRC:0.825
+
+34.104330708661415 0.04356926024018779

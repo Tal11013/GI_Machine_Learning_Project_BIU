@@ -10,7 +10,7 @@ from consts import *
 
 def generate_data2(folder_path, shape=(IMAGE_SIZE, 2*IMAGE_SIZE)):
     # read the csv file given as an input to the function
-    data = pd.read_csv(folder_path + "dataset.csv")
+    data = pd.read_csv(folder_path + DATASET_PATH)
     # create a new csv file for later use
     new_data = pd.DataFrame(columns=['path', 'label'])
     # iterate on the rows of the  data (given CSV file in the function)
@@ -19,7 +19,7 @@ def generate_data2(folder_path, shape=(IMAGE_SIZE, 2*IMAGE_SIZE)):
         torch.cuda.empty_cache()
         # get the image path from the csv file - .iloc[i,0] is used to access the value of row i and column 0 in the
         # data file (column 0 in the data gives the image path)
-        image_path = "C:\\Users\\alonl\\Downloads\\Xray_images\\"
+        image_path = XRAY_IMAGES_PATH
         # image_path = "/content/drive/MyDrive/Processed_Datasets_Xray_Images_Unzipped/Xray_Images/"
         image_path += data.iloc[i, 0]
         # read the png image from the path
@@ -48,7 +48,7 @@ def generate_data2(folder_path, shape=(IMAGE_SIZE, 2*IMAGE_SIZE)):
         # save the path and the label to the new general csv file ("new_data")
         new_data = pd.concat([new_data, pd.DataFrame([[folder_path + "measurements/"
                                                        + str(shape[0]) + "_" + str(shape[1]) + "/" + str(i) + CSV_ENDING,
-                                                       data['fracture_visible'].iloc[i]]], columns=['path', 'label'])])
+                                                       data[FRACTURE_VISIBLE_LABEL].iloc[i]]], columns=['path', 'label'])])
 
     # save the new general csv file
     new_data.to_csv(folder_path + "new_dataset_" + str(shape[0]) + "_"+str(shape[1])

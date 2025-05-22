@@ -2,9 +2,10 @@ from torch import nn
 import torch.nn.functional as F
 import torch
 
+from consts import *
 
 class ConvolutionalNet(nn.Module):
-    def __init__(self, batch_size, shape=(128, 128)):
+    def __init__(self, batch_size, shape=(IMAGE_SIZE, IMAGE_SIZE)):
         super(ConvolutionalNet, self).__init__()
         self.batch_size = batch_size
         self.shape = shape
