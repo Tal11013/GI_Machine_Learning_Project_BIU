@@ -1,0 +1,6 @@
+cuda:0
+  0%|          | 1/20327 [00:00<3:29:41,  1.62it/s]C:\Users\alonl\PycharmProjects\GI_Machine_Learning_Project_BIU\preprocessing_wrist.py:60: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  new_data = pd.concat([new_data, pd.DataFrame([[folder_path + "measurements/"+str(num_of_measurement) + "_"
+100%|██████████| 20327/20327 [32:02<00:00, 10.58it/s]
+64_128.csv
+ 49%|████▊     | 493/1016 [02:05<02:26,  3.57it/s]

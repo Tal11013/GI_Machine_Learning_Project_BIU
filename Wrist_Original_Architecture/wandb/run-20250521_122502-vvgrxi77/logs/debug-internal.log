@@ -1,0 +1,17 @@
+{"time":"2025-05-21T12:25:05.3206118+03:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"C:\\Users\\alonl\\PycharmProjects\\GI_Machine_Learning_Project_BIU\\Wrist_Original_Architecture\\wandb\\run-20250521_122502-vvgrxi77\\logs\\debug-core.log"}
+{"time":"2025-05-21T12:25:07.2371513+03:00","level":"INFO","msg":"created new stream","id":"vvgrxi77"}
+{"time":"2025-05-21T12:25:07.2376866+03:00","level":"INFO","msg":"stream: started","id":"vvgrxi77"}
+{"time":"2025-05-21T12:25:07.2376866+03:00","level":"INFO","msg":"handler: started","stream_id":"vvgrxi77"}
+{"time":"2025-05-21T12:25:07.2376866+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"vvgrxi77"}
+{"time":"2025-05-21T12:25:07.2376866+03:00","level":"INFO","msg":"sender: started","stream_id":"vvgrxi77"}
+{"time":"2025-05-21T12:25:07.6518921+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-21T13:33:38.4074267+03:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/barilan/GI_Machine_Learning_Project/vvgrxi77/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-05-21T22:00:31.3074155+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-21T22:00:31.407779+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-21T22:00:32.2176012+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.386262,"progress":"5.0KB/5.0KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3538107,"progress":"561B/561B"},{"desc":"uploading config.yaml","runtime_seconds":0.1844192,"progress":"731B/731B"}],"total_operations":3}}
+{"time":"2025-05-21T22:00:32.9477476+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-21T22:00:34.7062977+03:00","level":"INFO","msg":"stream: closing","id":"vvgrxi77"}
+{"time":"2025-05-21T22:00:34.7062977+03:00","level":"INFO","msg":"handler: closed","stream_id":"vvgrxi77"}
+{"time":"2025-05-21T22:00:34.7062977+03:00","level":"INFO","msg":"sender: closed","stream_id":"vvgrxi77"}
+{"time":"2025-05-21T22:00:34.7062977+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vvgrxi77"}
+{"time":"2025-05-21T22:00:34.7213652+03:00","level":"INFO","msg":"stream: closed","id":"vvgrxi77"}

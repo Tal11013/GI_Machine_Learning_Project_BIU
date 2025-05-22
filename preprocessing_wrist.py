@@ -7,9 +7,10 @@ from tqdm import tqdm
 import traceback
 
 
-def generate_data(folder_path, num_of_measurement, shape=(64, 128)):
+def generate_data(folder_path, sampling_rate, shape=(64, 128)):
     # create reference_matrix - a random matrix in the shape of number of measurments (photos) and the pixels each photo
     # contain, so shape[0]*shape[1]
+    num_of_measurement = int(round(sampling_rate * shape[0] * shape[1]))
     reference_matrix = np.random.randn(num_of_measurement, shape[0] * shape[1])
     # read the csv file given as an input to the function
     data = pd.read_csv(folder_path + "dataset.csv")
@@ -20,7 +21,7 @@ def generate_data(folder_path, num_of_measurement, shape=(64, 128)):
         torch.cuda.empty_cache()
         # get the image path from the csv file - .iloc[i,0] is used to access the value of row i and column 0 in the
         # data file (column 0 in the data gives the image path)
-        image_path = "C:\\Users\\iker1\\Downloads\\Xray_images\\"
+        image_path = "C:\\Users\\alonl\\Downloads\\Xray_images\\"
         image_path += data.iloc[i, 0]
         # read the png image from the path
         image_path += ".png"

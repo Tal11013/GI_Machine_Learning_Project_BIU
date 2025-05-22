@@ -1,0 +1,9 @@
+{"time":"2025-05-22T12:09:54.5425608+03:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"C:\\Users\\alonl\\PycharmProjects\\GI_Machine_Learning_Project_BIU\\Wrist_Original_Architecture\\wandb\\run-20250522_120954-vag4pz9x\\logs\\debug-core.log"}
+{"time":"2025-05-22T12:09:54.6616389+03:00","level":"INFO","msg":"created new stream","id":"vag4pz9x"}
+{"time":"2025-05-22T12:09:54.6616389+03:00","level":"INFO","msg":"stream: started","id":"vag4pz9x"}
+{"time":"2025-05-22T12:09:54.6616389+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"vag4pz9x"}
+{"time":"2025-05-22T12:09:54.6616389+03:00","level":"INFO","msg":"sender: started","stream_id":"vag4pz9x"}
+{"time":"2025-05-22T12:09:54.6616389+03:00","level":"INFO","msg":"handler: started","stream_id":"vag4pz9x"}
+{"time":"2025-05-22T12:09:54.957804+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-22T12:09:55.1535635+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-22T12:09:55.1540666+03:00","level":"INFO","msg":"Stopped system monitor"}

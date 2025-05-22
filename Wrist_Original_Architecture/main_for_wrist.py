@@ -3,13 +3,18 @@ import torch
 import torch.nn.functional as F
 from torch import nn
 
+from consts import *
+
 from GI_Wrist import GI_Wrist
 import preprocessing_wrist
+import preposcessing_wrist2
+from consts import ALON_PROCESSED_DATASETS_PATH, IMAGE_SIZE
 from wrist_cnn_diff import ConvolutionalNetDiff
 from wrist_cnn import ConvolutionalNet
 from train_and_test import train, test
 import torchvision.transforms as transforms
 import gc
+
 
 # Clear all allocated memory
 torch.cuda.empty_cache()
@@ -23,10 +28,7 @@ torch.cuda.reset_max_memory_cached()
 gc.collect()
 
 
-Processed_Datasets_Tal = ("C:\\Users\\iker1\\OneDrive\\מסמכים\\"
-                           "GitHub\\GI_Machine_Learning_Project_BIU\\Processed_Dataset\\")
 
-Processed_Datasets_Alon = "C:\\Users\\alonl\\Downloads\\Processed_Dataset\\"
 
 def main_wrist(config):
 
@@ -52,25 +54,26 @@ def main_wrist(config):
 
         transform = transforms.Compose([
             # Resize any 1:2 image tensor to 128x128
-            transforms.Lambda(lambda x: F.interpolate(x.unsqueeze(0).unsqueeze(0), size=(128, 128), mode='bilinear',
+            transforms.Lambda(lambda x: F.interpolate(x.unsqueeze(0).unsqueeze(0), size=(IMAGE_SIZE, IMAGE_SIZE), mode='bilinear',
                                                       align_corners=False).squeeze(0)),
             # Normalize the resized tensor
             transforms.Normalize(mean=[0.5], std=[0.5])
         ])
 
+        sampling_rate = config.sampling_rate
 
         # generate the data ### use this line only if you want to generate the data and transform the photos
         # to GI images BEFORE putting it into the net.
-        # preposcessing_wrist2.generate_data2(Processed_Datasets_Alon, shape_tuple)
-        # preprocessing_wrist.generate_data(Processed_Datasets_Alon, shape_tuple)
+        # preposcessing_wrist2.generate_data2(ALON_PROCESSED_DATASETS_PATH, shape_tuple)
+        preprocessing_wrist.generate_data(ALON_PROCESSED_DATASETS_PATH, sampling_rate, shape_tuple)
 
         # preposcessing_wrist2.generate_data2("/content/drive/MyDrive/Processed_Datasets/", shape_tuple)
         # preprocessing_wrist.generate_data("/content/drive/MyDrive/Processed_Datasets/", shape_tuple)
 
         # create the dataset
-        path_ending = str(shape) + ".csv"
+        path_ending = str(shape) + CSV_ENDING
         print(path_ending)
-        csv_path = Processed_Datasets_Alon + "new_dataset_" + path_ending
+        csv_path = ALON_PROCESSED_DATASETS_PATH  + "new_dataset_" + path_ending
         # csv_path = "/content/drive/MyDrive/Processed_Datasets/new_dataset_" + path_ending
         wrist_gi_dataset = GI_Wrist(csv_path, transform = transform)
         # split the data to train and test
@@ -98,10 +101,8 @@ def main_wrist(config):
         # create the network and choose if you want the GI imaging to happen before the entering to the net
         # or during the net - choose only one.
 
-        sampling_rate = config.sampling_rate
-
-        # model = ConvolutionalNet(batch_size, (128, 128)).to(device)
-        model = ConvolutionalNetDiff(batch_size, (128, 128), sampling_rate).to(device)
+        model = ConvolutionalNet(batch_size, (IMAGE_SIZE, IMAGE_SIZE)).to(device)
+        # model = ConvolutionalNetDiff(batch_size, (IMAGE_SIZE, IMAGE_SIZE), sampling_rate).to(device)
 
 
         # choose a loss function

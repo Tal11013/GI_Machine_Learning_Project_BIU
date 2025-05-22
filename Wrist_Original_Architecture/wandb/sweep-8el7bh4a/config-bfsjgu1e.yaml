@@ -1,0 +1,12 @@
+wandb_version: 1
+
+batch_size:
+  value: 16
+epoch:
+  value: 25
+lr:
+  value: 0.0002
+sampling_rate:
+  value: 0.2
+shape:
+  value: '64_128'

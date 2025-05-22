@@ -1,0 +1,30 @@
+2025-05-22 00:00:02,416 INFO    Thread-46 (_run_job):20348 [wandb_setup.py:_flush():68] Current SDK version is 0.19.2
+2025-05-22 00:00:02,417 INFO    Thread-46 (_run_job):20348 [wandb_setup.py:_flush():68] Configure stats pid to 20348
+2025-05-22 00:00:02,417 INFO    Thread-46 (_run_job):20348 [wandb_setup.py:_flush():68] Loading settings from C:\Users\alonl\.config\wandb\settings
+2025-05-22 00:00:02,417 INFO    Thread-46 (_run_job):20348 [wandb_setup.py:_flush():68] Loading settings from C:\Users\alonl\PycharmProjects\GI_Machine_Learning_Project_BIU\Wrist_Original_Architecture\wandb\settings
+2025-05-22 00:00:02,418 INFO    Thread-46 (_run_job):20348 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-05-22 00:00:02,419 INFO    Thread-46 (_run_job):20348 [wandb_init.py:_log_setup():523] Logging user logs to C:\Users\alonl\PycharmProjects\GI_Machine_Learning_Project_BIU\Wrist_Original_Architecture\wandb\run-20250522_000002-z97ixi7d\logs\debug.log
+2025-05-22 00:00:02,419 INFO    Thread-46 (_run_job):20348 [wandb_init.py:_log_setup():524] Logging internal logs to C:\Users\alonl\PycharmProjects\GI_Machine_Learning_Project_BIU\Wrist_Original_Architecture\wandb\run-20250522_000002-z97ixi7d\logs\debug-internal.log
+2025-05-22 00:00:02,420 INFO    Thread-46 (_run_job):20348 [wandb_init.py:init():641] calling init triggers
+2025-05-22 00:00:02,420 INFO    Thread-46 (_run_job):20348 [wandb_init.py:init():647] wandb.init called with sweep_config: {'batch_size': 16, 'epoch': 50, 'lr': 0.0002, 'sampling_rate': 0.35, 'shape': '64_128'}
+config: {}
+2025-05-22 00:00:02,420 INFO    Thread-46 (_run_job):20348 [wandb_init.py:init():674] starting backend
+2025-05-22 00:00:02,697 INFO    Thread-46 (_run_job):20348 [wandb_init.py:init():678] sending inform_init request
+2025-05-22 00:00:02,763 INFO    Thread-46 (_run_job):20348 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=spawn, using: spawn
+2025-05-22 00:00:02,764 INFO    Thread-46 (_run_job):20348 [wandb_init.py:init():693] backend started and connected
+2025-05-22 00:00:02,764 INFO    Thread-46 (_run_job):20348 [wandb_run.py:_config_callback():1283] config_cb None None {'batch_size': 16, 'epoch': 50, 'lr': 0.0002, 'sampling_rate': 0.35, 'shape': '64_128'}
+2025-05-22 00:00:02,772 INFO    Thread-46 (_run_job):20348 [wandb_init.py:init():786] updated telemetry
+2025-05-22 00:00:02,836 INFO    Thread-46 (_run_job):20348 [wandb_init.py:init():818] communicating run to backend with 90.0 second timeout
+2025-05-22 00:00:03,317 INFO    Thread-46 (_run_job):20348 [wandb_init.py:init():868] starting run threads in backend
+2025-05-22 00:00:06,651 INFO    Thread-46 (_run_job):20348 [wandb_run.py:_console_start():2415] atexit reg
+2025-05-22 00:00:06,652 INFO    Thread-46 (_run_job):20348 [wandb_run.py:_redirect():2265] redirect: wrap_raw
+2025-05-22 00:00:06,652 INFO    Thread-46 (_run_job):20348 [wandb_run.py:_redirect():2330] Wrapping output streams.
+2025-05-22 00:00:06,652 INFO    Thread-46 (_run_job):20348 [wandb_run.py:_redirect():2355] Redirects installed.
+2025-05-22 00:00:06,654 INFO    Thread-46 (_run_job):20348 [wandb_init.py:init():910] run started, returning control to user process
+2025-05-22 09:28:52,010 INFO    Thread-46 (_run_job):20348 [wandb_run.py:_finish():2140] finishing run barilan/GI_Machine_Learning_Project/z97ixi7d
+2025-05-22 09:28:52,051 INFO    Thread-46 (_run_job):20348 [wandb_run.py:_atexit_cleanup():2380] got exitcode: 0
+2025-05-22 09:28:52,100 INFO    Thread-46 (_run_job):20348 [wandb_run.py:_restore():2362] restore
+2025-05-22 09:28:52,101 INFO    Thread-46 (_run_job):20348 [wandb_run.py:_restore():2368] restore done
+2025-05-22 09:28:54,440 INFO    Thread-46 (_run_job):20348 [wandb_run.py:_footer_history_summary_info():3984] rendering history
+2025-05-22 09:28:54,454 INFO    Thread-46 (_run_job):20348 [wandb_run.py:_footer_history_summary_info():4016] rendering summary
+2025-05-22 09:28:54,545 INFO    Thread-46 (_run_job):20348 [wandb_run.py:_footer_sync_info():3945] logging synced files

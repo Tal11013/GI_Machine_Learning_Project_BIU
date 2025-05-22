@@ -1,0 +1,63 @@
+cuda:0
+  0%|          | 0/20327 [00:00<?, ?it/s]C:\Users\alonl\PycharmProjects\GI_Machine_Learning_Project_BIU\preposcessing_wrist2.py:47: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  new_data = pd.concat([new_data, pd.DataFrame([[folder_path + "measurements/"
+100%|██████████| 20327/20327 [10:58<00:00, 30.86it/s] 
+64_128.csv
+100%|██████████| 1016/1016 [04:20<00:00,  3.90it/s]
+Epoch: 1 	Training Loss: 0.038815 	Accuracy: 66.71%
+P:0.592  R:0.521  F1:0.466  AUROC:0.620  AUPRC:0.759
+100%|██████████| 1016/1016 [02:19<00:00,  7.26it/s]
+Epoch: 2 	Training Loss: 0.038625 	Accuracy: 66.78%
+P:0.595  R:0.521  F1:0.466  AUROC:0.622  AUPRC:0.755
+100%|██████████| 1016/1016 [02:43<00:00,  6.20it/s]
+Epoch: 3 	Training Loss: 0.038022 	Accuracy: 67.27%
+P:0.610  R:0.553  F1:0.534  AUROC:0.658  AUPRC:0.781
+100%|██████████| 1016/1016 [03:17<00:00,  5.14it/s]
+Epoch: 4 	Training Loss: 0.038013 	Accuracy: 67.46%
+P:0.617  R:0.584  F1:0.584  AUROC:0.658  AUPRC:0.784
+100%|██████████| 1016/1016 [02:24<00:00,  7.03it/s]
+Epoch: 5 	Training Loss: 0.037570 	Accuracy: 67.98%
+P:0.626  R:0.595  F1:0.597  AUROC:0.676  AUPRC:0.790
+100%|██████████| 1016/1016 [02:18<00:00,  7.32it/s]
+Epoch: 6 	Training Loss: 0.037120 	Accuracy: 68.73%
+P:0.637  R:0.598  F1:0.600  AUROC:0.702  AUPRC:0.817
+100%|██████████| 1016/1016 [02:22<00:00,  7.11it/s]
+Epoch: 7 	Training Loss: 0.036924 	Accuracy: 69.77%
+P:0.652  R:0.617  F1:0.622  AUROC:0.710  AUPRC:0.822
+100%|██████████| 1016/1016 [02:23<00:00,  7.07it/s]
+Epoch: 8 	Training Loss: 0.036717 	Accuracy: 69.81%
+P:0.653  R:0.623  F1:0.628  AUROC:0.718  AUPRC:0.828
+100%|██████████| 1016/1016 [02:19<00:00,  7.27it/s]
+Epoch: 9 	Training Loss: 0.036635 	Accuracy: 70.16%
+P:0.658  R:0.622  F1:0.627  AUROC:0.719  AUPRC:0.826
+100%|██████████| 1016/1016 [02:18<00:00,  7.33it/s]
+Epoch: 10 	Training Loss: 0.036773 	Accuracy: 69.39%
+P:0.647  R:0.616  F1:0.621  AUROC:0.715  AUPRC:0.827
+100%|██████████| 1016/1016 [02:18<00:00,  7.33it/s]
+Epoch: 11 	Training Loss: 0.036596 	Accuracy: 69.92%
+P:0.654  R:0.622  F1:0.628  AUROC:0.722  AUPRC:0.831
+100%|██████████| 1016/1016 [02:18<00:00,  7.33it/s]
+Epoch: 12 	Training Loss: 0.037629 	Accuracy: 69.16%
+P:0.646  R:0.588  F1:0.585  AUROC:0.637  AUPRC:0.736
+100%|██████████| 1016/1016 [02:18<00:00,  7.33it/s]
+Epoch: 13 	Training Loss: 0.036776 	Accuracy: 69.36%
+P:0.646  R:0.608  F1:0.612  AUROC:0.714  AUPRC:0.824
+100%|██████████| 1016/1016 [02:18<00:00,  7.33it/s]
+Epoch: 14 	Training Loss: 0.036665 	Accuracy: 69.82%
+P:0.653  R:0.619  F1:0.624  AUROC:0.720  AUPRC:0.828
+100%|██████████| 1016/1016 [02:18<00:00,  7.33it/s]
+Epoch: 15 	Training Loss: 0.037207 	Accuracy: 69.37%
+P:0.647  R:0.602  F1:0.604  AUROC:0.672  AUPRC:0.770
+100%|██████████| 1016/1016 [02:18<00:00,  7.33it/s]
+Epoch: 16 	Training Loss: 0.036808 	Accuracy: 69.59%
+P:0.651  R:0.603  F1:0.605  AUROC:0.711  AUPRC:0.819
+100%|██████████| 1016/1016 [02:18<00:00,  7.33it/s]
+Epoch: 17 	Training Loss: 0.036830 	Accuracy: 69.83%
+P:0.653  R:0.617  F1:0.622  AUROC:0.697  AUPRC:0.791
+100%|██████████| 1016/1016 [02:18<00:00,  7.33it/s]
+Epoch: 18 	Training Loss: 0.036585 	Accuracy: 69.96%
+P:0.655  R:0.628  F1:0.634  AUROC:0.725  AUPRC:0.835
+100%|██████████| 1016/1016 [02:18<00:00,  7.32it/s]
+Epoch: 19 	Training Loss: 0.036741 	Accuracy: 70.07%
+P:0.657  R:0.619  F1:0.624  AUROC:0.715  AUPRC:0.824
+ 34%|███▍      | 345/1016 [00:47<01:31,  7.30it/s]

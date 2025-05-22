@@ -19,10 +19,10 @@ sweep_configuration = {
     'parameters':
         {
             'lr': {'values': [0.0002]},
-            'epoch': {'values': [10,30,50]},
-            'shape': {'values': ["32_64"]},
+            'epoch': {'values': [10, 25, 50]},
+            'shape': {'values': ["64_128"]},
             'batch_size': {'values': [16]},
-            'sampling_rate': {'values': [0.5]}
+            'sampling_rate': {'values': [0.2, 0.35, 0.5]}
         }
 }
 

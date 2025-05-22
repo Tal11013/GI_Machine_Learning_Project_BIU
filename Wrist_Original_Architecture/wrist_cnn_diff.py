@@ -2,6 +2,7 @@ from torch import nn
 import torch.nn.functional as F
 import torch
 
+from consts import *
 
 class DiffuserLayer(nn.Module):
     def __init__(self, input_size, num_of_masks):
@@ -23,7 +24,7 @@ class DiffuserLayer(nn.Module):
 
 
 class ConvolutionalNetDiff(nn.Module):
-    def __init__(self, batch_size, shape=(128, 128), sampling_rate=1.0):
+    def __init__(self, batch_size, shape=(IMAGE_SIZE, IMAGE_SIZE), sampling_rate=1.0):
         super(ConvolutionalNetDiff, self).__init__()
         self.batch_size = batch_size
         self.shape = shape

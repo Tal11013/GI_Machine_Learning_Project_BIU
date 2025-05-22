@@ -5,8 +5,10 @@ import os
 from tqdm import tqdm
 import cv2
 
+from consts import *
 
-def generate_data2(folder_path, shape=(128, 256)):
+
+def generate_data2(folder_path, shape=(IMAGE_SIZE, 2*IMAGE_SIZE)):
     # read the csv file given as an input to the function
     data = pd.read_csv(folder_path + "dataset.csv")
     # create a new csv file for later use
@@ -21,7 +23,7 @@ def generate_data2(folder_path, shape=(128, 256)):
         # image_path = "/content/drive/MyDrive/Processed_Datasets_Xray_Images_Unzipped/Xray_Images/"
         image_path += data.iloc[i, 0]
         # read the png image from the path
-        image_path += ".png"
+        image_path += PNG_ENDING
 
         img = cv2.imread(image_path)
         # Resize the image
@@ -39,15 +41,15 @@ def generate_data2(folder_path, shape=(128, 256)):
             os.makedirs(parent_folder)
         # save the measurements to csv file
         csv_save_path = folder_path + "measurements/" + str(shape[0]) + "_" + str(
-            shape[1]) + "/" + str(i) + ".csv"
+            shape[1]) + "/" + str(i) + CSV_ENDING
         pd.DataFrame(img).to_csv(csv_save_path, index=False)
         loaded_img = pd.read_csv(csv_save_path)
 
         # save the path and the label to the new general csv file ("new_data")
         new_data = pd.concat([new_data, pd.DataFrame([[folder_path + "measurements/"
-                                                       + str(shape[0]) + "_" + str(shape[1]) + "/" + str(i) + ".csv",
+                                                       + str(shape[0]) + "_" + str(shape[1]) + "/" + str(i) + CSV_ENDING,
                                                        data['fracture_visible'].iloc[i]]], columns=['path', 'label'])])
 
     # save the new general csv file
     new_data.to_csv(folder_path + "new_dataset_" + str(shape[0]) + "_"+str(shape[1])
-                    + ".csv", index=False)
+                    + CSV_ENDING, index=False)

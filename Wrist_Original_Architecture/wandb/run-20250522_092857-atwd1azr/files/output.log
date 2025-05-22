@@ -1,0 +1,16 @@
+cuda:0
+C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\cuda\memory.py:365: FutureWarning: torch.cuda.reset_max_memory_allocated now calls torch.cuda.reset_peak_memory_stats, which resets /all/ peak memory stats.
+  warnings.warn(
+C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\cuda\memory.py:391: FutureWarning: torch.cuda.reset_max_memory_cached now calls torch.cuda.reset_peak_memory_stats, which resets /all/ peak memory stats.
+  warnings.warn(
+64_128.csv
+100%|██████████| 1016/1016 [23:16<00:00,  1.37s/it]
+Epoch: 1 	Training Loss: 0.039904 	Accuracy: 66.72%
+P:0.557  R:0.502  F1:0.408  AUROC:0.530  AUPRC:0.682
+100%|██████████| 1016/1016 [24:02<00:00,  1.42s/it] 
+Epoch: 2 	Training Loss: 0.038739 	Accuracy: 66.83%
+P:0.600  R:0.503  F1:0.411  AUROC:0.614  AUPRC:0.750
+100%|██████████| 1016/1016 [22:43<00:00,  1.34s/it]
+Epoch: 3 	Training Loss: 0.039372 	Accuracy: 66.76%
+P:0.445  R:0.500  F1:0.401  AUROC:0.567  AUPRC:0.704
+ 17%|█▋        | 171/1016 [03:48<18:59,  1.35s/it]

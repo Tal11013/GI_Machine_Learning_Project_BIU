@@ -1,0 +1,161 @@
+cuda:0
+C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\cuda\memory.py:365: FutureWarning: torch.cuda.reset_max_memory_allocated now calls torch.cuda.reset_peak_memory_stats, which resets /all/ peak memory stats.
+  warnings.warn(
+C:\Users\alonl\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\cuda\memory.py:391: FutureWarning: torch.cuda.reset_max_memory_cached now calls torch.cuda.reset_peak_memory_stats, which resets /all/ peak memory stats.
+  warnings.warn(
+64_128.csv
+100%|██████████| 1016/1016 [12:41<00:00,  1.33it/s]
+Epoch: 1 	Training Loss: 0.040321 	Accuracy: 66.57%
+P:0.527  R:0.500  F1:0.401  AUROC:0.503  AUPRC:0.668
+100%|██████████| 1016/1016 [12:56<00:00,  1.31it/s]
+Epoch: 2 	Training Loss: 0.039845 	Accuracy: 66.57%
+P:0.533  R:0.500  F1:0.401  AUROC:0.524  AUPRC:0.676
+100%|██████████| 1016/1016 [11:27<00:00,  1.48it/s]
+Epoch: 3 	Training Loss: 0.039263 	Accuracy: 66.60%
+P:0.333  R:0.500  F1:0.400  AUROC:0.586  AUPRC:0.735
+100%|██████████| 1016/1016 [11:11<00:00,  1.51it/s]
+Epoch: 4 	Training Loss: 0.039487 	Accuracy: 66.60%
+P:0.333  R:0.500  F1:0.400  AUROC:0.566  AUPRC:0.717
+100%|██████████| 1016/1016 [11:19<00:00,  1.50it/s]
+Epoch: 5 	Training Loss: 0.039426 	Accuracy: 66.60%
+P:0.333  R:0.500  F1:0.400  AUROC:0.569  AUPRC:0.709
+100%|██████████| 1016/1016 [11:14<00:00,  1.51it/s]
+Epoch: 6 	Training Loss: 0.039560 	Accuracy: 66.58%
+P:0.497  R:0.499  F1:0.432  AUROC:0.578  AUPRC:0.737
+100%|██████████| 1016/1016 [11:19<00:00,  1.50it/s]
+Epoch: 7 	Training Loss: 0.039252 	Accuracy: 66.60%
+P:0.333  R:0.500  F1:0.400  AUROC:0.587  AUPRC:0.735
+100%|██████████| 1016/1016 [11:17<00:00,  1.50it/s]
+Epoch: 8 	Training Loss: 0.039352 	Accuracy: 66.60%
+P:0.833  R:0.500  F1:0.400  AUROC:0.573  AUPRC:0.713
+100%|██████████| 1016/1016 [11:05<00:00,  1.53it/s]
+Epoch: 9 	Training Loss: 0.039209 	Accuracy: 66.60%
+P:0.833  R:0.500  F1:0.400  AUROC:0.590  AUPRC:0.739
+100%|██████████| 1016/1016 [11:06<00:00,  1.53it/s]
+Epoch: 10 	Training Loss: 0.039594 	Accuracy: 66.54%
+P:0.522  R:0.500  F1:0.402  AUROC:0.554  AUPRC:0.698
+100%|██████████| 1016/1016 [11:07<00:00,  1.52it/s]
+Epoch: 11 	Training Loss: 0.039130 	Accuracy: 66.60%
+P:0.333  R:0.500  F1:0.400  AUROC:0.591  AUPRC:0.730
+100%|██████████| 1016/1016 [11:06<00:00,  1.52it/s]
+Epoch: 12 	Training Loss: 0.038539 	Accuracy: 66.80%
+P:0.602  R:0.514  F1:0.445  AUROC:0.629  AUPRC:0.760
+100%|██████████| 1016/1016 [11:06<00:00,  1.52it/s]
+Epoch: 13 	Training Loss: 0.037770 	Accuracy: 67.68%
+P:0.619  R:0.577  F1:0.574  AUROC:0.677  AUPRC:0.801
+100%|██████████| 1016/1016 [11:05<00:00,  1.53it/s]
+Epoch: 14 	Training Loss: 0.037879 	Accuracy: 67.02%
+P:0.607  R:0.568  F1:0.562  AUROC:0.664  AUPRC:0.786
+100%|██████████| 1016/1016 [11:06<00:00,  1.53it/s]
+Epoch: 15 	Training Loss: 0.037689 	Accuracy: 67.89%
+P:0.623  R:0.579  F1:0.576  AUROC:0.678  AUPRC:0.801
+100%|██████████| 1016/1016 [11:08<00:00,  1.52it/s]
+Epoch: 16 	Training Loss: 0.037237 	Accuracy: 68.83%
+P:0.639  R:0.609  F1:0.613  AUROC:0.700  AUPRC:0.817
+100%|██████████| 1016/1016 [11:22<00:00,  1.49it/s]
+Epoch: 17 	Training Loss: 0.036946 	Accuracy: 69.62%
+P:0.651  R:0.612  F1:0.616  AUROC:0.711  AUPRC:0.823
+100%|██████████| 1016/1016 [11:16<00:00,  1.50it/s]
+Epoch: 18 	Training Loss: 0.036859 	Accuracy: 69.35%
+P:0.647  R:0.623  F1:0.628  AUROC:0.716  AUPRC:0.827
+100%|██████████| 1016/1016 [11:06<00:00,  1.53it/s]
+Epoch: 19 	Training Loss: 0.037178 	Accuracy: 69.05%
+P:0.642  R:0.603  F1:0.606  AUROC:0.695  AUPRC:0.810
+100%|██████████| 1016/1016 [11:05<00:00,  1.53it/s]
+Epoch: 20 	Training Loss: 0.036913 	Accuracy: 69.30%
+P:0.646  R:0.619  F1:0.624  AUROC:0.710  AUPRC:0.821
+100%|██████████| 1016/1016 [11:06<00:00,  1.52it/s]
+Epoch: 21 	Training Loss: 0.037103 	Accuracy: 69.18%
+P:0.644  R:0.611  F1:0.616  AUROC:0.700  AUPRC:0.813
+100%|██████████| 1016/1016 [11:09<00:00,  1.52it/s]
+Epoch: 22 	Training Loss: 0.036757 	Accuracy: 69.64%
+P:0.651  R:0.611  F1:0.614  AUROC:0.717  AUPRC:0.827
+100%|██████████| 1016/1016 [11:21<00:00,  1.49it/s]
+Epoch: 23 	Training Loss: 0.036889 	Accuracy: 69.62%
+P:0.650  R:0.618  F1:0.623  AUROC:0.711  AUPRC:0.821
+100%|██████████| 1016/1016 [11:21<00:00,  1.49it/s]
+Epoch: 24 	Training Loss: 0.036678 	Accuracy: 69.97%
+P:0.655  R:0.622  F1:0.628  AUROC:0.719  AUPRC:0.826
+100%|██████████| 1016/1016 [11:18<00:00,  1.50it/s]
+Epoch: 25 	Training Loss: 0.036629 	Accuracy: 70.06%
+P:0.657  R:0.622  F1:0.627  AUROC:0.723  AUPRC:0.830
+100%|██████████| 1016/1016 [11:19<00:00,  1.50it/s]
+Epoch: 26 	Training Loss: 0.036715 	Accuracy: 69.97%
+P:0.656  R:0.617  F1:0.622  AUROC:0.718  AUPRC:0.827
+100%|██████████| 1016/1016 [11:18<00:00,  1.50it/s]
+Epoch: 27 	Training Loss: 0.036757 	Accuracy: 69.80%
+P:0.655  R:0.605  F1:0.607  AUROC:0.715  AUPRC:0.824
+100%|██████████| 1016/1016 [11:19<00:00,  1.50it/s]
+Epoch: 28 	Training Loss: 0.036695 	Accuracy: 69.57%
+P:0.652  R:0.600  F1:0.601  AUROC:0.716  AUPRC:0.824
+100%|██████████| 1016/1016 [11:18<00:00,  1.50it/s]
+Epoch: 29 	Training Loss: 0.036449 	Accuracy: 70.44%
+P:0.662  R:0.625  F1:0.631  AUROC:0.727  AUPRC:0.830
+100%|██████████| 1016/1016 [11:13<00:00,  1.51it/s]
+Epoch: 30 	Training Loss: 0.036345 	Accuracy: 70.75%
+P:0.666  R:0.636  F1:0.643  AUROC:0.729  AUPRC:0.832
+100%|██████████| 1016/1016 [11:19<00:00,  1.50it/s]
+Epoch: 31 	Training Loss: 0.036652 	Accuracy: 69.94%
+P:0.655  R:0.618  F1:0.623  AUROC:0.723  AUPRC:0.832
+100%|██████████| 1016/1016 [11:20<00:00,  1.49it/s]
+Epoch: 32 	Training Loss: 0.036668 	Accuracy: 70.45%
+P:0.663  R:0.624  F1:0.630  AUROC:0.717  AUPRC:0.823
+100%|██████████| 1016/1016 [11:21<00:00,  1.49it/s]
+Epoch: 33 	Training Loss: 0.036618 	Accuracy: 69.86%
+P:0.654  R:0.618  F1:0.623  AUROC:0.721  AUPRC:0.831
+100%|██████████| 1016/1016 [11:22<00:00,  1.49it/s]
+Epoch: 34 	Training Loss: 0.036660 	Accuracy: 69.93%
+P:0.655  R:0.618  F1:0.623  AUROC:0.715  AUPRC:0.820
+100%|██████████| 1016/1016 [11:18<00:00,  1.50it/s]
+Epoch: 35 	Training Loss: 0.036533 	Accuracy: 70.44%
+P:0.662  R:0.625  F1:0.631  AUROC:0.725  AUPRC:0.832
+100%|██████████| 1016/1016 [11:20<00:00,  1.49it/s]
+Epoch: 36 	Training Loss: 0.036444 	Accuracy: 70.50%
+P:0.663  R:0.635  F1:0.641  AUROC:0.728  AUPRC:0.832
+100%|██████████| 1016/1016 [11:21<00:00,  1.49it/s]
+Epoch: 37 	Training Loss: 0.036397 	Accuracy: 70.57%
+P:0.664  R:0.638  F1:0.645  AUROC:0.731  AUPRC:0.836
+100%|██████████| 1016/1016 [11:18<00:00,  1.50it/s]
+Epoch: 38 	Training Loss: 0.036508 	Accuracy: 70.69%
+P:0.666  R:0.630  F1:0.636  AUROC:0.721  AUPRC:0.825
+100%|██████████| 1016/1016 [11:20<00:00,  1.49it/s]
+Epoch: 39 	Training Loss: 0.036355 	Accuracy: 70.52%
+P:0.663  R:0.633  F1:0.639  AUROC:0.727  AUPRC:0.830
+100%|██████████| 1016/1016 [11:18<00:00,  1.50it/s]
+Epoch: 40 	Training Loss: 0.036612 	Accuracy: 70.05%
+P:0.657  R:0.627  F1:0.633  AUROC:0.718  AUPRC:0.823
+100%|██████████| 1016/1016 [11:20<00:00,  1.49it/s]
+Epoch: 41 	Training Loss: 0.036398 	Accuracy: 70.77%
+P:0.666  R:0.636  F1:0.642  AUROC:0.729  AUPRC:0.833
+100%|██████████| 1016/1016 [11:18<00:00,  1.50it/s]
+Epoch: 42 	Training Loss: 0.036515 	Accuracy: 70.02%
+P:0.656  R:0.631  F1:0.636  AUROC:0.722  AUPRC:0.826
+100%|██████████| 1016/1016 [11:20<00:00,  1.49it/s]
+Epoch: 43 	Training Loss: 0.036439 	Accuracy: 70.93%
+P:0.669  R:0.632  F1:0.639  AUROC:0.716  AUPRC:0.816
+100%|██████████| 1016/1016 [11:19<00:00,  1.49it/s]
+Epoch: 44 	Training Loss: 0.036541 	Accuracy: 70.21%
+P:0.659  R:0.626  F1:0.632  AUROC:0.720  AUPRC:0.824
+100%|██████████| 1016/1016 [11:20<00:00,  1.49it/s]
+Epoch: 45 	Training Loss: 0.036474 	Accuracy: 70.49%
+P:0.663  R:0.631  F1:0.637  AUROC:0.724  AUPRC:0.827
+100%|██████████| 1016/1016 [11:18<00:00,  1.50it/s]
+Epoch: 46 	Training Loss: 0.036366 	Accuracy: 70.38%
+P:0.661  R:0.626  F1:0.632  AUROC:0.726  AUPRC:0.829
+100%|██████████| 1016/1016 [11:19<00:00,  1.50it/s]
+Epoch: 47 	Training Loss: 0.036586 	Accuracy: 70.12%
+P:0.658  R:0.622  F1:0.627  AUROC:0.721  AUPRC:0.828
+100%|██████████| 1016/1016 [11:18<00:00,  1.50it/s]
+Epoch: 48 	Training Loss: 0.036504 	Accuracy: 70.30%
+P:0.661  R:0.620  F1:0.625  AUROC:0.721  AUPRC:0.823
+100%|██████████| 1016/1016 [11:22<00:00,  1.49it/s]
+Epoch: 49 	Training Loss: 0.036665 	Accuracy: 70.00%
+P:0.656  R:0.621  F1:0.626  AUROC:0.718  AUPRC:0.824
+100%|██████████| 1016/1016 [11:59<00:00,  1.41it/s]
+Epoch: 50 	Training Loss: 0.036445 	Accuracy: 70.40%
+P:0.661  R:0.633  F1:0.639  AUROC:0.728  AUPRC:0.833
+
+Test set: Average loss: 0.0355, Accuracy: 2926/4064 (72.00%)
+P:0.680  R:0.659  F1:0.665  AUROC:0.760  AUPRC:0.858
+
+71.99803149606299 0.03549943560015733
