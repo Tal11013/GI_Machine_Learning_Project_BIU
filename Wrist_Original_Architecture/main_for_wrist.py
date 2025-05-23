@@ -8,26 +8,11 @@ from consts import *
 from GI_Wrist import GI_Wrist
 import preprocessing_wrist
 import preposcessing_wrist2
-from consts import ALON_PROCESSED_DATASETS_PATH, IMAGE_SIZE
 from wrist_cnn_diff import ConvolutionalNetDiff
 from wrist_cnn import ConvolutionalNet
 from train_and_test import train, test
 import torchvision.transforms as transforms
 import gc
-
-
-# Clear all allocated memory
-torch.cuda.empty_cache()
-
-# Optionally reset the CUDA memory allocator
-torch.cuda.reset_accumulated_memory_stats()
-torch.cuda.reset_peak_memory_stats()
-torch.cuda.reset_max_memory_allocated()
-torch.cuda.reset_max_memory_cached()
-
-gc.collect()
-
-
 
 
 def main_wrist(config):
@@ -64,7 +49,7 @@ def main_wrist(config):
 
         # generate the data ### use this line only if you want to generate the data and transform the photos
         # to GI images BEFORE putting it into the net.
-        preposcessing_wrist2.generate_data2(ALON_PROCESSED_DATASETS_PATH, shape_tuple)
+        # preposcessing_wrist2.generate_data2(ALON_PROCESSED_DATASETS_PATH, shape_tuple)
         # preprocessing_wrist.generate_data(ALON_PROCESSED_DATASETS_PATH, sampling_rate, shape_tuple)
 
         # preposcessing_wrist2.generate_data2("/content/drive/MyDrive/Processed_Datasets/", shape_tuple)
@@ -121,13 +106,7 @@ def main_wrist(config):
         return test_acc, test_loss
 
     finally:
-        for name in list(globals()):
-            obj = globals()[name]
-            if torch.is_tensor(obj) or isinstance(obj, torch.nn.Module):
-                del globals()[name]
-
         gc.collect()
-
         torch.cuda.empty_cache()
         torch.cuda.ipc_collect()
 
